@@ -1,0 +1,32 @@
+header {
+    color: white;
+    background-color: orange;
+    border: 1px solid orange;
+    width: 600px;
+    border-radius: 8px;
+}
+
+footer {
+    color: white;
+    background-color: orange;
+    border: 1px solid orange;
+    width: 600px;
+    border-radius: 8px;
+}
+
+#currentdate {
+    color: rgba(50, 50, 250, 1);
+}
+
+li {
+    list-style-type: square;
+}
+img {
+    border-radius: 20px;
+    right: 2px;
+    z-index: 1;
+}
+hr {
+    width: 600px;
+    left: 1px;
+}
