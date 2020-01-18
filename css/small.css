@@ -50,3 +50,7 @@ h2 {
 li {
     list-style-type: square;
 }
+
+a.flink:visited {
+    color:white;
+  }

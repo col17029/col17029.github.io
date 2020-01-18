@@ -39,6 +39,10 @@ header, footer {
 }
 
 img {
-    width: 200px;
+    width: 100%;
     height: auto;
 }
+
+a.flink:visited {
+    color:white;
+  }
