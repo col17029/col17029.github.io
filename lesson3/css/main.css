@@ -1,0 +1,51 @@
+li.font1 {
+    font-family: 'Catamaran', sans-serif;
+}
+
+li.font2 {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+header, main, footer {
+    padding: 1em;
+}
+
+img, p, li {
+    max-width: 45rem;
+}
+
+nav, h3 {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 20px;
+}
+
+p {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+}
+
+section {
+    border: 1px solid #bbb;
+    max-width: 45rem;
+    padding: 1em;
+}
+
+section.primary {
+    background-color: #043DB7;
+}
+
+section.secondary1 {
+    background-color: #B88104;
+}
+
+section.secondary2 {
+    background-color: #1F66FF;
+}
+
+main.color {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 24rem;
+    margin: 0 auto;
+}
+
