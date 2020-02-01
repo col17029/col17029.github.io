@@ -1,8 +1,39 @@
-@media only screen and (min-width: 32.5rem) {
-    main {
-        grid-template-columns: 1fr 1fr 1fr;
+@media only screen and (min-width: 40rem) {
+    nav button {
+        display: none;
     }
-    section:nth-child(3) {
-        grid-column: span 1;
+
+    nav ul.hide {
+        display: block;
+    }
+
+    nav ul {
+        margin-left: 2%;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        padding: .8rem 1rem;
+    }
+
+    header img {
+        width: 100px;
+    }
+    header {
+        font-size: 18px;
+    }
+
+    .headings h1 {
+        font-size: 2rem;
+    }
+    .motto {
+        letter-spacing: 1.5pt;
+        font-size: larger;
+        margin-left: 17px;
     }
 }

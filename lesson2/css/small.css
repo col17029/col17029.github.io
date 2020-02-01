@@ -27,7 +27,8 @@ main section {
     border-radius: 8px;
 }
 
-header, footer {
+header,
+footer {
     margin: 0 auto;
     border: 1px solid #bbb;
     color: white;
@@ -44,5 +45,5 @@ img {
 }
 
 a.flink:visited {
-    color:white;
-  }
+    color: white;
+}

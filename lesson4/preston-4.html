@@ -16,16 +16,38 @@
 
 <body>
     <header>
-
+        <picture>
+            <img src="images/suncloud.png" alt="suncloud">
+        </picture>
+        <section class="headings">
+            <h1>Wether Weather</h1>
+            <div class="motto">Whether wethers report weather or not!</div>
+        </section>
     </header>
+    <nav class="clearfix">
+        <button onclick="togglemenu()">&#9776;</button>
+        <ul id="menuNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
     <main>
+        <h2>Preston, Idaho</h2>
+        <div class="pageContent">Hero w/ weather summary</div>
+        <div class="pageContent">5 Day Forecast</div>
+        <div class="pageContent">Article</div>
+        <div class="pageContent">Contact Information</div>
 
     </main>
-    <footer>&copy 2020 | Jarrod C. Collison | Michigan | <a class="flink" href="https://www.byui.edu/online">BYU-Idaho
-            Online Learning</a><br>
+    <footer>&copy; 2020 &VerticalSeparator; Jarrod C. Collison &VerticalSeparator; Michigan &VerticalSeparator;
+        <a class="flink" href="https://www.byui.edu/online">BYU-Idaho Online Learning</a><br>
         <span id="currentdate"></span>
     </footer>
-    <script src="js/date.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

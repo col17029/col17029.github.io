@@ -32,14 +32,17 @@ section {
 
 section.primary {
     background-color: #2b4b84;
+    color: white;
 }
 
 section.secondary1 {
     background-color: #c77233;
+    color: white;
 }
 
 section.secondary2 {
     background-color: #6e83aa;
+    color: white;
 }
 
 main.color {
