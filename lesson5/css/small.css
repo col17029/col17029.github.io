@@ -142,7 +142,7 @@ header img {
     display: block;
     padding: 5px;
     font-weight: 700;
-    color: white;
+    color: black;
     font-size: 15px;
     border-bottom: 1px solid #bbb;
     background-color: #6e83aa;
@@ -157,7 +157,7 @@ header img {
     display: block;
     padding: 0 5px 5px;
     font-size: 14px;
-    color: white;
+    color: black;
 }
 
 a.flink {
