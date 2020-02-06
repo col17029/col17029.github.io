@@ -112,16 +112,16 @@ header img {
 }
 
 .headings h1 {
-    font-size: 1.6rem;
+    font-size: 20pt;
     margin: 0 0 0 17px;
 }
 
 .motto {
     font-style: italic;
     letter-spacing: 1pt;
-    color: forestgreen;
+    color: #c77233;
     margin-left: 20px;
-    font-size: .9rem;
+    font-size: 1rem;
 }
 
 a.flink {
