@@ -1,0 +1,135 @@
+header,
+footer,
+h1,
+h2,
+main,
+nav {
+    font-family: 'Catamaran', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-size: 16px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: white;
+}
+
+nav {
+    background-color: #6e83aa;
+    border: 1px solid #bbb;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: #c77233;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 55rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.pageContent {
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed #000;
+    padding: 15px;
+    background-color: #eee;
+    color: #444;
+
+}
+
+header {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border: 1px solid #bbb;
+    background-color: #2b4b84;
+    color: white;
+    padding: 15px 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+footer {
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    margin: 0 auto;
+    border: 1px solid #bbb;
+    color: white;
+    padding: 1rem;
+    background-color: #2b4b84;
+    text-align: center;
+    font-size: 12px;
+    max-width: 55rem;
+}
+
+header img {
+    width: 70px;
+    height: auto;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0 0 0;
+}
+
+.headings h1 {
+    font-size: 1.6rem;
+    margin: 0 0 0 17px;
+}
+
+.motto {
+    font-style: italic;
+    letter-spacing: 1pt;
+    color: forestgreen;
+    margin-left: 20px;
+    font-size: .9rem;
+}
+
+a.flink {
+    text-decoration: none;
+    color: white;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
