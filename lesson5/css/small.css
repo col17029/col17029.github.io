@@ -65,7 +65,7 @@ main {
     text-align: center;
 }
 
-.pageContent {
+.herodiv, .fivedaydiv, .articlediv, .contactdiv {
     display: block;
     margin: 10px auto;
     border: 1px dashed #000;
@@ -122,6 +122,42 @@ header img {
     color: #f3a971;
     margin-left: 20px;
     font-size: 1rem;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.col {
+    flex: 1 1 100%;
+    background-color: #6e83aa;
+    border: 1px solid #bbb;
+    font-size: 13px;
+    text-align: center;
+}
+
+.day0, .day1, .day2, .day3, .day4 {
+    display: block;
+    padding: 5px;
+    font-weight: 700;
+    color: white;
+    font-size: 15px;
+    border-bottom: 1px solid #bbb;
+    background-color: #6e83aa;
+}
+
+.flex div img {
+    border-radius: 100px;
+    padding: 5px;
+}
+
+.data {
+    display: block;
+    padding: 0 5px 5px;
+    font-size: 14px;
+    color: white;
 }
 
 a.flink {
