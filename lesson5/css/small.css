@@ -235,6 +235,16 @@ header img {
 
 }
 
+.noticeText {
+    border-radius: 8px;
+    border: 1px solid #bbb;
+    background-color: #E0C658;
+    color: black;
+    padding: 20px 0;
+    display: block;
+    text-align: center;
+}
+
 a.flink {
     text-decoration: none;
     color: white;
