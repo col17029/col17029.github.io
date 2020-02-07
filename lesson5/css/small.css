@@ -17,13 +17,6 @@ p {
     font-family: 'Barlow Condensed', sans-serif;
 }
 
-.fullwidth {
-    max-width: 100%;
-}
-
-.navwidth {
-    margin: auto;
-}
 
 nav button {
     margin: .2rem 2%;
@@ -34,27 +27,26 @@ nav button {
 }
 
 nav {
-    background-color: #6e83aa;
+    background-color: #436095;
     border: 1px solid #bbb;
+    margin: 0 auto;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+#menuNav {
+    margin: 0 auto;
+    list-style: none;
 }
 
-nav ul li a {
+#menuNav a {
     display: block;
     padding: .8rem 2%;
     text-decoration: none;
     color: white;
-    font-size: 18pt;
     border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 nav ul li.active a {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: #2b4b84;
     color: #fff;
 }
 

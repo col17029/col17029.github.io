@@ -1,4 +1,4 @@
-@media only screen and (min-width: 40rem) {
+@media only screen and (min-width: 650px) {
     nav button {
         display: none;
     }
@@ -7,23 +7,24 @@
         display: block;
     }
 
-    nav ul {
-        margin-left: 2%;
+    #menuNav {
+        display: flex;
+        justify-content: center;
+        padding: 0;
     }
 
-    nav ul li {
-        float: left;
-    }
-
-    nav ul li a {
+    #menuNav a {
         border: none;
         border-right: 1px solid rgba(0, 0, 0, 0.3);
+        border-left: 1px solid rgba(0, 0, 0, 0.3);
         padding: .8rem 1rem;
+        text-align: center;
     }
 
     header img {
         width: 100px;
     }
+
     header {
         font-size: 18px;
     }
@@ -31,6 +32,7 @@
     .headings h1 {
         font-size: 24pt;
     }
+
     .motto {
         letter-spacing: 1.5pt;
         font-size: 1.6rem;
