@@ -14,23 +14,14 @@ function togglemenu() {
     document.getElementById("menuNav").classList.toggle("hide");
 }
 
-/*try {
+try {
     let today = new Date().getDay()
     if (today == 5) {
-        document.getElementById("noticeText").style.display = "block";
+        document.getElementsByClassName("noticeText")[0].style.display = "block";
     } else {
-        document.getElementById("noticeText").style.display = "none";
+        document.getElementsByClassName("noticeText")[0].style.display = "none";
     };
     
 } catch (e) {
     alert("Error with code or your browser does not support Locale");
-}*/
-
-function showDate() {
-    let today = new Date().getDay()
-    if (today == 5) {
-        document.getElementById("noticeText").style.display = "block";
-    } else {
-        document.getElementById("noticeText").style.display = "none";
-    };
 }

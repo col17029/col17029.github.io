@@ -152,7 +152,6 @@ header img {
 .flex {
     display: flex;
     flex-direction: row;
-    padding: 5px;
 }
 
 .col {

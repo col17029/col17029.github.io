@@ -43,10 +43,6 @@
     .fivedaydiv {
         display: block;
         margin: 10px auto;
-        border: 1px dashed #000;
-        padding: 0;
-        background-color: #eee;
-        color: #444;
     }
 
     .weathersum,
