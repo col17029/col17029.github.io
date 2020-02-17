@@ -9,3 +9,4 @@ try {
 } catch (e) {
     alert("Error with code or your browser does not support Locale");
 }
+
