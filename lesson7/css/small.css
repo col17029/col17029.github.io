@@ -7,3 +7,19 @@ article img {
     transition: filter 0.5s;
 }
 
+picture {
+    align-content: center;
+    justify-content: center;
+}
+
+img {
+    border: 1px dashed grey;
+    padding: 2px;
+    justify-content: center;
+}
+
+.grid1 {
+    display: grid;
+    grid-column: 1;
+    justify-content: center;
+}
