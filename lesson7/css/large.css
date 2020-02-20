@@ -1,0 +1,9 @@
+@media only screen and (min-width: 880px) {
+    .gallery {
+        grid-template-columns: repeat(3, 300px);
+    }
+
+    img:hover {
+        box-shadow: 0 0 50px #333;
+    }
+}
