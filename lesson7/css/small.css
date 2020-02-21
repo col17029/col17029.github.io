@@ -3,8 +3,7 @@ footer,
 h1,
 h2,
 main,
-nav
-body {
+nav body {
     font-family: 'Catamaran', sans-serif;
 }
 
@@ -54,17 +53,16 @@ nav ul.hide {
 }
 
 main {
-    margin: 0 auto;
-    max-width: 1000px;
     padding: 1rem;
+    display: flex;
+    justify-content: center;
 }
 
 .gallery {
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 300px;
+    grid-template-columns: 350px;
     grid-gap: 20px;
-    
 }
 
 .title {
@@ -73,30 +71,32 @@ main {
     justify-self: center;
 }
 
-picture img[data-src] {
+.gridimg img[data-src] {
     filter: blur(0.2em);
 }
 
-picture img {
+.gridimg img {
     filter: blur(0em);
     transition: filter 0.5s;
 }
 
 .label {
-    padding: 2px;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
 }
 
-picture {
+.gridimg {
     display: grid;
     justify-items: center;
+    border: solid black;
+    width: 356px;
 }
 
 img {
-    border: 1px dashed grey;
-    padding: 2px;
+    width: 100%;
+    border-bottom: solid black;
 }
-
-
 
 header {
     border-top-left-radius: 8px;
