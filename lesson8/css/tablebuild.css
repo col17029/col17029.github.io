@@ -35,6 +35,11 @@ caption {
     padding: 15px;
 }
 
+.highlight {
+    background-color: #628ca6;
+    color: white;
+}
+
 table th {
     background-color: #628ca6;
     color: white;
