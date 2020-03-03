@@ -1,0 +1,46 @@
+
+
+body {
+    font-family: 'Catamaran', sans-serif;
+}
+
+h1, h2 {
+    color: #436095;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 300px;
+    justify-content: center;
+}
+
+section {
+    padding: 1rem;
+    margin: .8rem;
+    background-color: rgb(245, 228, 153);
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    padding-top: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+}
+
+@media only screen and (min-width: 400px) {
+    .cards {
+        grid-template-columns: repeat(2, 300px);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .cards {
+        grid-template-columns: repeat(4, 300px);
+    }
+}
+
