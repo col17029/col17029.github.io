@@ -53,27 +53,64 @@ nav ul.hide {
 }
 
 main {
-    padding: 1rem;
-    display: block;
-    justify-content: center;
+    margin: auto;
+    width: 60%;
 }
 
+.wireframe {
+    border: solid #2b4b84;
+    border-radius: 8px;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+}
 .wstory {
-    display: block;
-    border: solid blue;
-    overflow: auto;
-    padding: 1rem;
-    padding-left: 0;
-}
-
-.wstory h2 p {
-    padding-top: 0;
+    border: solid #2b4b84;
+    border-radius: 8px;
+    padding-left: 1rem;
+    overflow: auto; 
+       
 }
 
 .wstory img {
-    float: left;
-    padding-right: 1rem;
+    float: right;
+    padding-left: 1rem;
 }
+
+.towninfo {
+    border: solid #2b4b84;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(1, 98%);
+    grid-gap: .5rem;
+    justify-content: center;
+    padding-top: .8rem;
+}
+
+.towninfo section {
+    padding: 1rem;
+    margin: .8rem;
+    background-color: #f3a971;
+    text-align: center;
+}
+.townname {
+    font-size: 36px;
+    font-weight: 700;
+    color: #2b4b84;
+    padding-top: .5rem;
+}
+
+.townmotto {
+    padding-bottom: 2rem;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.towninfo img {
+    width: 100%;
+    padding-top: .8rem;
+    
+}
+
 header {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;

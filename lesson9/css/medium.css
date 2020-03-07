@@ -22,6 +22,36 @@
         font-size: 18px;
     }
 
+    main {
+        margin: auto;
+        width: 90%;
+    }
+
+    .towninfo {
+        border: solid #2b4b84;
+        border-radius: 8px;
+        padding-top: .8rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .towninfo section {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .towninfo section:nth-child(odd) {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .towninfo section img {
+        width: 50%;
+        padding-top: .8rem;
+        float: left
+    }
+
     header img {
         width: 100px;
     }
