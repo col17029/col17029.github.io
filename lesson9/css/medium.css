@@ -27,18 +27,36 @@
         width: 90%;
     }
 
+    .wstory {
+        border: solid #2b4b84;
+        border-radius: 8px;
+        padding-left: 1rem;
+        overflow: auto; 
+           
+    }
+    
+
+    .wstory img {
+        width: 40%;
+        float: right;
+        padding-left: 1rem;
+    }
+
     .towninfo {
         border: solid #2b4b84;
         border-radius: 8px;
-        padding-top: .8rem;
+        padding: .8rem;
         display: flex;
         flex-wrap: wrap;
     }
 
 
     .towninfo section {
+        margin-top: .5rem;
         display: flex;
         flex-direction: row;
+        width: 100%;
+        
     }
 
     .towninfo section:nth-child(odd) {
@@ -46,10 +64,15 @@
         flex-direction: row-reverse;
     }
 
+    .towntext {
+        width: 75%;
+        padding: 90px 0;
+    }
+
     .towninfo section img {
-        width: 50%;
+        width: 100%;
         padding-top: .8rem;
-        float: left
+        
     }
 
     header img {

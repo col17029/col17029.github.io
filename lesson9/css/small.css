@@ -54,7 +54,7 @@ nav ul.hide {
 
 main {
     margin: auto;
-    width: 60%;
+    width: 100%;
 }
 
 .wireframe {
@@ -63,17 +63,20 @@ main {
     padding-left: 1rem;
     padding-bottom: 2rem;
 }
+
 .wstory {
     border: solid #2b4b84;
     border-radius: 8px;
-    padding-left: 1rem;
+    padding: .5rem;
     overflow: auto; 
+    margin: 0 auto;
        
 }
 
 .wstory img {
-    float: right;
-    padding-left: 1rem;
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
 }
 
 .towninfo {
@@ -83,14 +86,15 @@ main {
     grid-template-columns: repeat(1, 98%);
     grid-gap: .5rem;
     justify-content: center;
-    padding-top: .8rem;
+    padding: .5rem;
 }
 
 .towninfo section {
     padding: 1rem;
-    margin: .8rem;
+    
     background-color: #f3a971;
     text-align: center;
+    border-radius: 8px;
 }
 .townname {
     font-size: 36px;
