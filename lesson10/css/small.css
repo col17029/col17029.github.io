@@ -148,36 +148,51 @@ header img {
     font-size: 1rem;
 }
 
-.flex {
-    display: flex;
-    flex-direction: row;
+.fivedaydiv {
+    margin: 10px auto;
 }
 
-.col {
+.fcFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.fcFlex div {
+    border: 1px solid black;
+    background-color: #6e83aa;
+    padding: 1rem;
+    width: 100%;
+}
+
+.fcCol {
     flex: 1 1 100%;
     background-color: #6e83aa;
-    border: 1px solid #bbb;
+    border: 12px solid black;
     font-size: 13px;
     text-align: center;
 }
 
-.day0,
-.day1,
-.day2,
-.day3,
-.day4 {
+.fcDay,
+.fcDate,
+.fcTemp,
+.fcDesc {
     display: block;
-    padding: 5px;
     font-weight: 700;
     color: black;
-    font-size: 15px;
-    border-bottom: 1px solid #bbb;
+    text-align: center;
     background-color: #6e83aa;
 }
 
-.flex div img {
-    border-radius: 100px;
+.fcDesc {
+    text-transform: capitalize;
+}
+
+.fcFlex div img {
+    
     padding: 5px;
+    
+    background-color: #6e83aa;
 }
 
 .data {

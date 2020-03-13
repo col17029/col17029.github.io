@@ -47,7 +47,7 @@ const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
+        //console.log(jsObject);
         document.getElementById('current-temp').textContent = jsObject.main.temp;
         document.getElementById('high-temp').textContent = jsObject.main.temp_max;
         document.getElementById('low-temp').textContent = jsObject.main.temp_min;
@@ -75,3 +75,48 @@ fetch(apiURL)
             alert("Error with code");
         }
     });
+
+//-----------------------------------------------------------
+
+var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+const apiForecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=45f0ac31381fb6b34cef9102a4a06f70';
+fetch(apiForecastURL)
+    .then((response) => response.json())
+    .then((jsObject) => {
+        const fcList = jsObject.list.filter(fcList => fcList.dt_txt.includes('18:00:00'))
+        //console.log(jsObject);
+        console.log(fcList);
+
+        fcList.forEach(forecast => {
+                let fcCol = document.createElement('div');
+                let fcDay = document.createElement('span');
+                let fcDate = document.createElement('span');
+                let image = document.createElement('img');
+                let fcTemp = document.createElement('span');
+                let fcDesc = document.createElement('span');
+                let valDate = new Date(forecast.dt_txt);          
+                
+                fcDay.textContent = weekday[valDate.getDay()];
+                fcDay.setAttribute('class', "fcDay");
+                fcDate.textContent = (valDate.getMonth() + 1) + '/' + valDate.getDate();
+                fcDate.setAttribute('class', "fcDate");
+                image.setAttribute('src', 'https://openweathermap.org/img/wn/' + forecast.weather[0].icon + '@2x.png');
+                image.setAttribute('alt', forecast.weather[0].description);
+                fcTemp.textContent = Math.round(forecast.main.temp) + "\xB0 F";
+                fcTemp.setAttribute('class', "fcTemp");
+                fcDesc.textContent = forecast.weather[0].description;
+                fcDesc.setAttribute('class', "fcDesc");
+                
+                fcCol.appendChild(fcDay);
+                fcCol.appendChild(fcDate);
+                fcCol.appendChild(image);
+                fcCol.appendChild(fcTemp);
+                fcCol.appendChild(fcDesc);
+                
+                document.querySelector('div.fcFlex').appendChild(fcCol);
+            })
+        });
+
+    
+    
