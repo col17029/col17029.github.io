@@ -1,0 +1,255 @@
+header,
+footer,
+h1,
+h2,
+main,
+nav {
+    font-family: 'Catamaran', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-size: 16px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: white;
+}
+
+nav {
+    background-color: #436095;
+    border: 1px solid #bbb;
+    margin: 0 auto;
+}
+
+#menuNav {
+    margin: 0 auto;
+    list-style: none;
+}
+
+#menuNav a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul li.active a {
+    background-color: #2b4b84;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: #c77233;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 55rem;
+    padding: 1rem;
+}
+
+.herodiv {
+    position: relative;
+}
+
+.herodiv img {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.fivedaydiv {
+    display: none;
+}
+
+.weathersum {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: radial-gradient(#eee, #c77233);
+    border: 1px dashed #bbb;
+    padding: 0;
+    box-shadow: 0 0 30px #111;
+    opacity: .8;
+    color: black;
+}
+
+.weathersum,
+h2,
+p {
+    margin: 4px;
+    color: black;
+    font-weight: 700;
+    padding: 0;
+}
+
+header {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border: 1px solid #bbb;
+    background-color: #2b4b84;
+    color: white;
+    padding: 15px 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+footer {
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    margin: 0 auto;
+    border: 1px solid #bbb;
+    color: white;
+    padding: 1rem;
+    background-color: #2b4b84;
+    text-align: center;
+    font-size: 12pt;
+    max-width: 55rem;
+}
+
+header img {
+    width: 70px;
+    height: auto;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0 0 0;
+}
+
+.headings h1 {
+    font-size: 20pt;
+    margin: 0 0 0 17px;
+}
+
+.motto {
+    font-style: italic;
+    letter-spacing: 1pt;
+    color: #f3a971;
+    margin-left: 20px;
+    font-size: 1rem;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    flex: 1 1 100%;
+    background-color: #6e83aa;
+    border: 1px solid #bbb;
+    font-size: 13px;
+    text-align: center;
+}
+
+.day0,
+.day1,
+.day2,
+.day3,
+.day4 {
+    display: block;
+    padding: 5px;
+    font-weight: 700;
+    color: black;
+    font-size: 15px;
+    border-bottom: 1px solid #bbb;
+    background-color: #6e83aa;
+}
+
+.flex div img {
+    border-radius: 100px;
+    padding: 5px;
+}
+
+.data {
+    display: block;
+    padding: 0 5px 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+}
+
+.articlediv {
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed #000;
+    padding: 0;
+    background-color: #eee;
+    color: #444;
+    overflow: auto;
+}
+
+.articlediv h3, h4 {
+    padding: 0 10px;
+}
+
+.articlediv img {
+    width: 100%;
+    height: auto;
+}
+
+.articlediv p {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 10px;
+}
+
+.contactdiv {
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed #000;
+    padding: 0;
+    background-color: #eee;
+    color: #444;
+    overflow: auto;
+}
+
+.contactimg{
+    float: left;
+    width: 300px;
+}
+
+.contactinfo {
+    margin: 1rem;
+
+}
+
+.noticeText {
+    border-radius: 8px;
+    border: 1px solid #bbb;
+    background-color: #E0C658;
+    color: black;
+    padding: 20px 0;
+    display: block;
+    text-align: center;
+}
+
+a.flink {
+    text-decoration: none;
+    color: white;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
