@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description"
+        content="Assignment portal for Jarrod Collison in CIT 230: Web Frontend Development at Brigham Young University - Idaho">
+    <title>Jarrod Collison - Gallery Project Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/gal-small.css">
+    <link rel="stylesheet" href="css/gal-medium.css">
+    <link rel="stylesheet" href="css/gal-large.css">
+</head>
+
+<body>
+
+    <header>
+        <picture>
+            <img src="images/suncloud.png" alt="suncloud">
+        </picture>
+        <section class="headings">
+            <h1>Wether Weather</h1>
+            <div class="motto">Whether wethers report weather or not!</div>
+        </section>
+    </header>
+
+    <nav class="clearfix">
+        <button onclick="togglemenu()">&#9776;</button>
+        <ul id="menuNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li class="active"><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div class="gallery">
+            <h2 class="title">Weather Gallery</h2>
+            <div class="gridimg">
+                <img src="https://via.placeholder.com/400x300.png" data-src="images/clearSkies400_300.jpg"
+                    alt="clear skies">
+                <div class="label">It's going to be clear skies today</div>
+            </div>
+            <div class="gridimg">
+                <img src="https://via.placeholder.com/400x300.png" data-src="images/tornado400_300.jpg"
+                    alt="tornado">
+                <div class="label">Expect high winds today!</div>
+            </div>
+            <div class="gridimg">
+                <img src="https://via.placeholder.com/400x300.png" data-src="images/ice400_300.jpg" alt="icy">
+                <div class="label">Watch your step there's ice out there.</div>
+            </div>
+            <div class="gridimg">
+                <img src="https://via.placeholder.com/400x300.png" data-src="images/sunset400_300.jpg"
+                    alt="sunset">
+                <div class="label">Enjoy a beautiful sunset this evening!</div>
+            </div>
+            <div class="gridimg">
+                <img src="https://via.placeholder.com/400x300.png" data-src="images/lightning400_300.jpg"
+                    alt="lightning">
+                <div class="label">There's a storm a brewin'</div>
+            </div>
+            <div class="gridimg">
+                <img src="https://via.placeholder.com/400x300.png" data-src="images/sunny400_300.jpg"
+                    alt="sunny">
+                <div class="label">We'll have sunshine all day today.</div>
+            </div>
+            <div class="gridimg">
+                <img src="https://via.placeholder.com/400x300.png" data-src="images/snowy400_300.jpg"
+                    alt="snowy">
+                <div class="label">Careful on the roads!</div>
+            </div>
+            <div class="gridimg">
+                <img src="https://via.placeholder.com/400x300.png" data-src="images/rainy400_300.jpg" alt="rainy">
+                <div class="label">It's going to continue raining into tonight.</div>
+            </div>
+            <div class="gridimg">
+                <img src="https://via.placeholder.com/400x300.png" data-src="images/cloudy400_300.jpg"
+                    alt="cloudy">
+                <div class="label">Cloudy but warm today.</div>
+            </div>
+        </div>
+
+    </main>
+    <footer>&copy; 2020 &VerticalSeparator; Jarrod C. Collison &VerticalSeparator; Michigan &VerticalSeparator;
+        <a class="flink" href="https://www.byui.edu/online">BYU-Idaho Online Learning</a><br>
+        <span id="currentdate"></span>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

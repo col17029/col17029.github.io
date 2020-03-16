@@ -1,0 +1,175 @@
+header,
+footer,
+h1,
+h2,
+main,
+nav body {
+    font-family: 'Catamaran', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: white;
+}
+
+nav {
+    background-color: #436095;
+    border: 1px solid #bbb;
+    margin: 0 auto;
+}
+
+#menuNav {
+    margin: 0 auto;
+    list-style: none;
+}
+
+#menuNav a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul li.active a {
+    background-color: #2b4b84;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: #c77233;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+main {
+    margin: auto;
+    width: 100%;
+}
+
+.wireframe {
+    border: solid #2b4b84;
+    border-radius: 8px;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+}
+
+.wstory {
+    border: solid #2b4b84;
+    border-radius: 8px;
+    padding: .5rem;
+    overflow: auto; 
+    margin: 0 auto;
+       
+}
+
+.wstory img {
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.towninfo {
+    border: solid #2b4b84;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(1, 98%);
+    grid-gap: .5rem;
+    justify-content: center;
+    padding: .5rem;
+}
+
+.towninfo section {
+    padding: 1rem;
+    
+    background-color: #f3a971;
+    text-align: center;
+    border-radius: 8px;
+}
+.townname {
+    font-size: 36px;
+    font-weight: 700;
+    color: #2b4b84;
+    padding-top: .5rem;
+}
+
+.townmotto {
+    padding-bottom: 2rem;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.towninfo img {
+    width: 100%;
+    padding-top: .8rem;
+    
+}
+
+header {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border: 1px solid #bbb;
+    background-color: #2b4b84;
+    color: white;
+    padding: 15px 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+footer {
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    margin: 0 auto;
+    border: 1px solid #bbb;
+    color: white;
+    padding: 1rem;
+    background-color: #2b4b84;
+    text-align: center;
+    font-size: 12pt;
+}
+
+header img {
+    width: 70px;
+    height: auto;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0 0 0;
+}
+
+.headings h1 {
+    font-size: 20pt;
+    margin: 0 0 0 17px;
+}
+
+.motto {
+    font-style: italic;
+    letter-spacing: 1pt;
+    color: #f3a971;
+    margin-left: 20px;
+    font-size: 1rem;
+}
+
+a.flink {
+    text-decoration: none;
+    color: white;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description"
+        content="Assignment portal for Jarrod Collison in CIT 230: Web Frontend Development at Brigham Young University - Idaho">
+    <meta name="cityID" content="5604473">
+    <title>Jarrod Collison - Project Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/city-small.css">
+    <link rel="stylesheet" href="css/city-medium.css">
+    <link rel="stylesheet" href="css/city-large.css">
+</head>
+
+<body>
+    <section class="noticeText">
+        <h4>
+            Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+        </h4>
+    </section>
+
+    <header>
+        <picture>
+            <img src="images/suncloud.png" alt="suncloud">
+        </picture>
+        <section class="headings">
+            <h1>Wether Weather</h1>
+            <div class="motto">Whether wethers report weather or not!</div>
+        </section>
+    </header>
+
+    <nav class="clearfix">
+        <button onclick="togglemenu()">&#9776;</button>
+        <ul id="menuNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Preston, Idaho</h2>
+        <div class="herodiv">
+            <img src="images/trees-in-park-800.jpg" alt="park" sizes="100vw" srcset="images/trees-in-park-400.jpg 400w, 
+                                                                                  images/trees-in-park-800.jpg 650w, 
+                                                                                  images/trees-in-park-1100.jpg 880w">
+            <section class="weathersum">
+                <h2>Weather Summary</h2>
+                <p>Currently: <span id="current-desc"></span></p>
+                <p>Current temp: <span id="current-temp"></span> &deg;F</p>
+                <p>Wind Chill: <span id="windchill"></span> &deg;F</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="wind-speed"></span> mph</p>
+                <p>High: <span id="high-temp"></span> &deg;F</p>
+                <p>Low: <span id="low-temp"></span> &deg;F</p>
+            </section>
+        </div>
+        <div class="fivedaydiv">
+            <div class="fiveDayLabel">
+                <h3>5 Day Forecast:</h3>
+            </div>
+            <div class="fcFlex"></div>
+        </div>
+        <div class="articlediv">
+            <img src="images/watercrafts-on-river.jpg" alt="waterscene">
+            <h3>Kayaking Utah</h3>
+            <h4>by: J. B. Good</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi in iste sed obcaecati. Qui, quaerat
+                alias?
+                Rerum dolorum delectus perferendis voluptatum facere sit ea debitis? Natus, obcaecati molestias?
+                Deleniti, quas.</p>
+            <p>Labore, provident nisi illo dolorem qui quidem voluptatibus voluptatum sequi. Quo fuga ut ipsam
+                excepturi
+                expedita sequi, accusamus eligendi veritatis error quod, incidunt in adipisci aliquam porro eum
+                tempore
+                praesentium!</p>
+            <p>Ipsum non in maxime possimus voluptates dolorum a optio nihil quasi mollitia, reprehenderit
+                doloremque.
+                Vero unde commodi quos modi rem, necessitatibus aperiam ducimus aliquam nisi omnis eveniet, velit
+                veniam
+                minima.</p>
+            <p>Deserunt consequatur ullam dolorem a vel quam, nobis cum doloremque nulla aspernatur nemo? Neque
+                porro
+                dolor velit culpa. Voluptates animi enim cum aperiam placeat sapiente aliquid officiis expedita
+                dolorem
+                doloremque?</p>
+
+        </div>
+        <div class="contactdiv">
+            <div class="contactinfo">
+                <h3>The Wether Weather Site</h3>
+                <p>1234 Weather St.</p>
+                <p>Preston, ID 83263</p>
+                <p>Phone: 999.999.9999</p>
+                <p>Email: weatherinfo@wetherweather.org</p>
+            </div>
+            <img class="contactimg" src="images/Preston-GoogleMaps.jpg" alt="map">
+        </div>
+
+    </main>
+    <footer>&copy; 2020 &VerticalSeparator; Jarrod C. Collison &VerticalSeparator; Michigan &VerticalSeparator;
+        <a class="flink" href="https://www.byui.edu/online">BYU-Idaho Online Learning</a><br>
+        <a class="flink" href="http://openweathermap.org">OpenWeatherMap.org</a><br>
+        <span id="currentdate"></span>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/city.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
