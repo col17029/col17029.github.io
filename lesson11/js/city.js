@@ -85,3 +85,53 @@ fetch(apiForecastURL)
                 document.querySelector('div.fcFlex').appendChild(fcCol);
             })
         });
+
+
+//----------------------------------------------------------------------------------
+
+
+const eventURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+fetch(eventURL)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (jsonObject) {
+        const towns = jsonObject['towns'];
+        //console.table(jsonObject); // temporary checking for valid response and data parsing
+               
+            console.log(cityID);
+            
+            var townID = "";
+            switch (cityID) {
+                case "5585010": 
+                    townID = "Fish Haven";
+                    console.log(townID);
+                    break;
+                case "5604473": 
+                    townID = "Preston";
+                    console.log(townID);
+                    console.log(cityID);
+                    break;
+                case "5607916": 
+                   townID = "Soda Springs";
+                    console.log(townID);
+                    break; 
+            }
+
+            for (let i = 0; i < towns.length; i++) {
+            console.log(townID);
+            if (towns[i].name == townID)  {
+                let event = document.createElement('section');
+                let eventList = document.createElement('div');
+                
+
+                eventList.textContent = towns[i].events.join(" <br> ");
+                eventList.setAttribute('class', "eventList");           
+                           
+                event.appendChild(eventList);
+                
+                document.querySelector('div.eventInfo').appendChild(event);
+            }
+        }
+    });
