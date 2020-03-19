@@ -1,62 +1,3 @@
-header,
-footer,
-h1,
-h2,
-main,
-nav {
-    font-family: 'Catamaran', sans-serif;
-}
-
-body {
-    padding: 0;
-    margin: 0;
-}
-
-p {
-    font-size: 16px;
-    font-family: 'Barlow Condensed', sans-serif;
-}
-
-
-nav button {
-    margin: .2rem 2%;
-    background-color: transparent;
-    border: none;
-    font-size: 1.6rem;
-    color: white;
-}
-
-nav {
-    background-color: #436095;
-    border: 1px solid #bbb;
-    margin: 0 auto;
-}
-
-#menuNav {
-    margin: 0 auto;
-    list-style: none;
-}
-
-#menuNav a {
-    display: block;
-    padding: .8rem 2%;
-    text-decoration: none;
-    color: white;
-    border-top: 1px solid rgba(0, 0, 0, 0.3);
-}
-
-nav ul li.active a {
-    background-color: #2b4b84;
-    color: #fff;
-}
-
-nav ul li a:hover {
-    background-color: #c77233;
-}
-
-nav ul.hide {
-    display: none;
-}
 
 main {
     margin: 0 auto;
@@ -72,10 +13,14 @@ main {
     max-width: 100%;
     padding: 0;
     margin: 0;
+    border-radius: 8px;
 }
 
 .fivedaydiv {
     display: none;
+    border: 2px solid #2b4b84;
+    border-radius: 8px;
+    padding: 10px;
 }
 
 .fiveDayLabel h3 {
@@ -87,7 +32,7 @@ main {
     top: 10px;
     left: 10px;
     background: radial-gradient(#eee, #c77233);
-    border: 1px dashed #bbb;
+    border-radius: 8px;
     padding: 0;
     box-shadow: 0 0 30px #111;
     opacity: .9;
@@ -103,53 +48,19 @@ p {
     padding: 0;
 }
 
-header {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border: 1px solid #bbb;
-    background-color: #2b4b84;
-    color: white;
-    padding: 15px 0;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
-
-footer {
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    margin: 0 auto;
-    border: 1px solid #bbb;
-    color: white;
-    padding: 1rem;
-    background-color: #2b4b84;
+.eventBox {
+    border: 2px solid #2b4b84;
+    border-radius: 8px; 
     text-align: center;
-    font-size: 12pt;
-    max-width: 55rem;
+    margin: 10px 0px;
 }
 
-header img {
-    width: 70px;
-    height: auto;
+.eventBox hr {
+    width: 50%;
 }
 
-.headings {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 0 0 0;
-}
-
-.headings h1 {
-    font-size: 20pt;
-    margin: 0 0 0 17px;
-}
-
-.motto {
-    font-style: italic;
-    letter-spacing: 1pt;
-    color: #f3a971;
-    margin-left: 20px;
-    font-size: 1rem;
+.eventBox ul {
+    list-style-type: none;
 }
 
 .fcFlex {
@@ -205,7 +116,8 @@ header img {
 .articlediv {
     display: block;
     margin: 10px auto;
-    border: 1px dashed #000;
+    border: 2px solid #2b4b84;
+    border-radius: 8px;
     padding: 0;
     background-color: #eee;
     color: #444;
@@ -219,6 +131,8 @@ header img {
 .articlediv img {
     width: 100%;
     height: auto;
+    margin: 10px;
+    border-radius: 8px;
 }
 
 .articlediv p {
@@ -230,7 +144,8 @@ header img {
 .contactdiv {
     display: block;
     margin: 10px auto;
-    border: 1px dashed #000;
+    border: 2px solid #2b4b84;
+    border-radius: 8px;
     padding: 0;
     background-color: #eee;
     color: #444;
@@ -240,6 +155,8 @@ header img {
 .contactimg{
     float: left;
     width: 300px;
+    margin: 10px;
+    border-radius: 8px;
 }
 
 .contactinfo {
@@ -257,13 +174,3 @@ header img {
     text-align: center;
 }
 
-a.flink {
-    text-decoration: none;
-    color: white;
-}
-
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}

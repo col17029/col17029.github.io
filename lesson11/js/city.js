@@ -124,12 +124,17 @@ fetch(eventURL)
             if (towns[i].name == townID)  {
                 let event = document.createElement('section');
                 let eventList = document.createElement('div');
-                
+                let ul = document.createElement("ul");
 
-                eventList.textContent = towns[i].events.join(" <br> ");
+                eventList.textContent = towns[i].events.forEach(event => {
+                    let li = document.createElement("li");
+                    li.textContent = event;
+                    ul.appendChild(li);
+                });
                 eventList.setAttribute('class', "eventList");           
                            
                 event.appendChild(eventList);
+                eventList.appendChild(ul);
                 
                 document.querySelector('div.eventInfo').appendChild(event);
             }
