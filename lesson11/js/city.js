@@ -26,7 +26,7 @@ fetch(apiURL)
         document.getElementById('wind-speed').textContent = jsObject.wind.speed;
         document.getElementById('current-desc').textContent = jsObject.weather[0].main;
         const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png'; // note the concatenation
-        const desc = jsObject.weather[0].description; 
+        const desc = jsObject.weather[0].description;
 
         try {
             var t = jsObject.main.temp;
@@ -57,34 +57,34 @@ fetch(apiForecastURL)
         //console.log(fcList);
 
         fcList.forEach(forecast => {
-                let fcCol = document.createElement('div');
-                let fcDay = document.createElement('span');
-                let fcDate = document.createElement('span');
-                let image = document.createElement('img');
-                let fcTemp = document.createElement('span');
-                let fcDesc = document.createElement('span');
-                let valDate = new Date(forecast.dt_txt);          
-                
-                fcDay.textContent = weekday[valDate.getDay()];
-                fcDay.setAttribute('class', "fcDay");
-                fcDate.textContent = (valDate.getMonth() + 1) + '/' + valDate.getDate();
-                fcDate.setAttribute('class', "fcDate");
-                image.setAttribute('src', 'https://openweathermap.org/img/wn/' + forecast.weather[0].icon + '@2x.png');
-                image.setAttribute('alt', forecast.weather[0].description);
-                fcTemp.textContent = Math.round(forecast.main.temp) + "\xB0 F";
-                fcTemp.setAttribute('class', "fcTemp");
-                fcDesc.textContent = forecast.weather[0].description;
-                fcDesc.setAttribute('class', "fcDesc");
-                
-                fcCol.appendChild(fcDay);
-                fcCol.appendChild(fcDate);
-                fcCol.appendChild(image);
-                fcCol.appendChild(fcTemp);
-                fcCol.appendChild(fcDesc);
-                
-                document.querySelector('div.fcFlex').appendChild(fcCol);
-            })
-        });
+            let fcCol = document.createElement('div');
+            let fcDay = document.createElement('span');
+            let fcDate = document.createElement('span');
+            let image = document.createElement('img');
+            let fcTemp = document.createElement('span');
+            let fcDesc = document.createElement('span');
+            let valDate = new Date(forecast.dt_txt);
+
+            fcDay.textContent = weekday[valDate.getDay()];
+            fcDay.setAttribute('class', "fcDay");
+            fcDate.textContent = (valDate.getMonth() + 1) + '/' + valDate.getDate();
+            fcDate.setAttribute('class', "fcDate");
+            image.setAttribute('src', 'https://openweathermap.org/img/wn/' + forecast.weather[0].icon + '@2x.png');
+            image.setAttribute('alt', forecast.weather[0].description);
+            fcTemp.textContent = Math.round(forecast.main.temp) + "\xB0 F";
+            fcTemp.setAttribute('class', "fcTemp");
+            fcDesc.textContent = forecast.weather[0].description;
+            fcDesc.setAttribute('class', "fcDesc");
+
+            fcCol.appendChild(fcDay);
+            fcCol.appendChild(fcDate);
+            fcCol.appendChild(image);
+            fcCol.appendChild(fcTemp);
+            fcCol.appendChild(fcDesc);
+
+            document.querySelector('div.fcFlex').appendChild(fcCol);
+        })
+    });
 
 
 //----------------------------------------------------------------------------------
@@ -99,29 +99,29 @@ fetch(eventURL)
     .then(function (jsonObject) {
         const towns = jsonObject['towns'];
         //console.table(jsonObject); // temporary checking for valid response and data parsing
-               
-            console.log(cityID);
-            
-            var townID = "";
-            switch (cityID) {
-                case "5585010": 
-                    townID = "Fish Haven";
-                    console.log(townID);
-                    break;
-                case "5604473": 
-                    townID = "Preston";
-                    console.log(townID);
-                    console.log(cityID);
-                    break;
-                case "5607916": 
-                   townID = "Soda Springs";
-                    console.log(townID);
-                    break; 
-            }
 
-            for (let i = 0; i < towns.length; i++) {
+        console.log(cityID);
+
+        var townID = "";
+        switch (cityID) {
+            case "5585010":
+                townID = "Fish Haven";
+                console.log(townID);
+                break;
+            case "5604473":
+                townID = "Preston";
+                console.log(townID);
+                console.log(cityID);
+                break;
+            case "5607916":
+                townID = "Soda Springs";
+                console.log(townID);
+                break;
+        }
+
+        for (let i = 0; i < towns.length; i++) {
             console.log(townID);
-            if (towns[i].name == townID)  {
+            if (towns[i].name == townID) {
                 let event = document.createElement('section');
                 let eventList = document.createElement('div');
                 let ul = document.createElement("ul");
@@ -131,11 +131,11 @@ fetch(eventURL)
                     li.textContent = event;
                     ul.appendChild(li);
                 });
-                eventList.setAttribute('class', "eventList");           
-                           
+                eventList.setAttribute('class', "eventList");
+
                 event.appendChild(eventList);
                 eventList.appendChild(ul);
-                
+
                 document.querySelector('div.eventInfo').appendChild(event);
             }
         }

@@ -42,8 +42,10 @@
         <form method="get" action="thankyou.html">
             <fieldset>
                 <legend>Storm Center Input Area:</legend>
-                <label class="ontop">Full Name:* <input type="text" name="fullname" pattern="[A-Za-z ]{5,}" required></label>
-                <label class="ontop">Email: <input type="email" name="email" placeholder="someone@somewhere.com"></label>
+                <label class="ontop">Full Name:* <input type="text" name="fullname" pattern="[A-Za-z ]{5,}"
+                        required></label>
+                <label class="ontop">Email: <input type="email" name="email"
+                        placeholder="someone@somewhere.com"></label>
                 <label class="ontop">Phone Number:* <input type="tel" name="phone" required></label>
                 <label class="ontop">Zip Code:* <input type="number" name="zip" required></label>
                 <label class="ontop">Storm Date: <input type="date" name="date"></label>
@@ -56,10 +58,10 @@
                         <option value="Tornado">
                     </datalist>
                 </label>
-                <label class="ontop">Storm Severity: 
+                <label class="ontop">Storm Severity:
                     <span id="severityvalue">5</span>
-                    <input type="range" name="severity" value="5" min="1" max="10" step="1"
-                        list="tickmarks" oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)">
+                    <input type="range" name="severity" value="5" min="1" max="10" step="1" list="tickmarks"
+                        oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)">
                 </label>
                 <datalist id="tickmarks">
                     <option value="0">
@@ -75,12 +77,12 @@
                     <option value="10">
                 </datalist>
                 <label class="ontop" for="stormregion">Storm Region: </label>
-                    <select name="stormregion" id="stormregion">
-                        <option value="" selected disabled>Select Region ...</option>
-                        <option value="Preston">Preston</option>
-                        <option value="SodaSprings">Soda Springs</option>
-                        <option value="FishHaven">Fish Haven</option>
-                    </select>
+                <select name="stormregion" id="stormregion">
+                    <option value="" selected disabled>Select Region ...</option>
+                    <option value="Preston">Preston</option>
+                    <option value="SodaSprings">Soda Springs</option>
+                    <option value="FishHaven">Fish Haven</option>
+                </select>
                 <div>User in-danger level: </div>
                 <label class="onside"><input type="radio" name="indanger" value="yes">yes</label>
                 <label class="onside"><input type="radio" name="indanger" value="maybe">maybe</label>
