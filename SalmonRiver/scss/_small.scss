@@ -1,0 +1,24 @@
+main {
+    font-family: $fontFamily;
+    max-width: 500px;
+}
+
+.primary {
+    background-color: $primaryColor;
+    color: white;
+}
+
+.highlight {
+    background-color: $highlightColor;
+    color: white;
+}
+
+.hover {
+    background-color: $hoverColor;
+    color: white;
+}
+
+.menu {
+    background-color: $menuColor;
+    color: white;
+}

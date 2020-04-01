@@ -52,3 +52,22 @@ main.color {
     margin: 0 auto;
 }
 
+section.phf {
+    background-color: #29526d;
+    color: white;
+}
+
+section.hn {
+    background-color: #aa8c39;
+    color: white;
+}
+
+section.mhw {
+    background-color: #aa5639;
+    color: white;
+}
+
+section.menu {
+    background-color: #123852;
+    color: white;
+}
