@@ -1,24 +1,88 @@
-main {
+body {
     font-family: $fontFamily;
-    max-width: 500px;
 }
 
-.primary {
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header {
+    margin: 0 auto;
     background-color: $primaryColor;
     color: white;
-}
+    padding: 2%;
+    picture {
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+    } // end picture
+    h1 {
+        
+        font-size: 1.8rem;
+    //    width: 100%;
+        text-align: center; 
+    } // end h1
+    h2 {
+        margin-top: -20px;
+        font-size: 1rem;   //edit for mobile
+        font-style: italic;
+        color: #c77233;
+        text-align: center;
+    } // end h2
+} // end header
 
-.highlight {
-    background-color: $highlightColor;
-    color: white;
-}
 
-.hover {
-    background-color: $hoverColor;
-    color: white;
-}
-
-.menu {
+nav {
     background-color: $menuColor;
+    margin: 0 auto;
+    button {
+        margin: .2rem 2%;
+        background-color: transparent;
+        border: none;
+        font-size: 1.6rem;
+        color: white;
+    }  // end button
+    ul li.active a {
+        background-color: $primaryColor;
+        color: #fff;
+    } // end ul li.active a
+    ul li a:hover {
+        background-color: $hoverColor;
+    } // end ul li a:hover
+    ul.hide {
+        display: none;
+    } // end ul.hide
+} // end nav
+
+#menuNav {
+    margin: 0 auto;
+    list-style: none;
+}
+
+#menuNav a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
     color: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+main {}
+
+
+footer {
+    margin: 0 auto;
+    background-color: $primaryColor;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+// res_confirmation page
+.confirm {
+    margin: 0 auto;
+    padding: 2rem;
 }

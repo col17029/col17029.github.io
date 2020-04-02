@@ -1,1 +1,106 @@
-main{font-family:"Raleway",sans-serif;max-width:500px}.primary{background-color:#29526D;color:white}.highlight{background-color:#aa8c39;color:white}.hover{background-color:#aa5639;color:white}.menu{background-color:#123852;color:white}
+body {
+  font-family: "Raleway", sans-serif; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+header {
+  margin: 0 auto;
+  background-color: #29526D;
+  color: white;
+  padding: 2%; }
+  header picture {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem; }
+  header h1 {
+    font-size: 1.8rem;
+    text-align: center; }
+  header h2 {
+    margin-top: -20px;
+    font-size: 1rem;
+    font-style: italic;
+    color: #c77233;
+    text-align: center; }
+
+nav {
+  background-color: #123852;
+  margin: 0 auto; }
+  nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: white; }
+  nav ul li.active a {
+    background-color: #29526D;
+    color: #fff; }
+  nav ul li a:hover {
+    background-color: #aa5639; }
+  nav ul.hide {
+    display: none; }
+
+#menuNav {
+  margin: 0 auto;
+  list-style: none; }
+
+#menuNav a {
+  display: block;
+  padding: .8rem 2%;
+  text-decoration: none;
+  color: white;
+  border-top: 1px solid rgba(0, 0, 0, 0.3); }
+
+footer {
+  margin: 0 auto;
+  background-color: #29526D;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem; }
+
+.confirm {
+  margin: 0 auto;
+  padding: 2rem; }
+
+@media only screen and (min-width: 625px) {
+  header {
+    display: flex;
+    align-content: center;
+    justify-content: center; }
+    header picture {
+      display: flex;
+      justify-content: center;
+      padding-top: 0; }
+    header img {
+      width: 100px;
+      padding-right: 1rem; }
+    header h1 {
+      margin: -5px 0 0 0;
+      font-size: 2.5rem; }
+    header h2 {
+      font-size: 1.5rem;
+      text-align: right;
+      margin: 0; }
+  nav button {
+    display: none; }
+  nav ul.hide {
+    display: block; }
+  #menuNav {
+    display: flex;
+    justify-content: center;
+    padding: 0; }
+  #menuNav a {
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    padding: .8rem 1rem;
+    text-align: center;
+    font-size: 1.2rem; }
+  footer {
+    font-size: 1.2rem; } }
+
+/* end of media query */
+/* end of media query */
