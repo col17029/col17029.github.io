@@ -68,7 +68,7 @@ footer {
 .advTable {
   padding: 1rem; }
 
-.divForm {
+.resForm {
   display: flex;
   justify-content: center; }
 
@@ -126,12 +126,31 @@ form {
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.1); }
 
-.res_confirm {
+.form_response {
   margin: 0 auto;
   padding: 2rem;
   max-width: 350px; }
 
-@media only screen and (min-width: 625px) {
+.contactMap {
+  display: block;
+  text-align: center;
+  justify-content: center;
+  margin: 1rem auto;
+  border: 1px solid #123852;
+  border-radius: 10px;
+  padding: 1rem 0;
+  width: 350px; }
+  .contactMap img {
+    width: 90%; }
+
+.contactAddress p {
+  margin: .5rem; }
+
+.contactForm {
+  display: flex;
+  justify-content: center; }
+
+@media only screen and (min-width: 650px) {
   header {
     display: flex;
     align-content: center;
@@ -166,7 +185,13 @@ form {
     text-align: center;
     font-size: 1.2rem; }
   footer {
-    font-size: 1.2rem; } }
+    font-size: 1.2rem; }
+  .contactMap {
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 50%; }
+    .contactMap img {
+      width: 100%; } }
 
 /* end of media query */
 /* end of media query */
