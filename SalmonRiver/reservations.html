@@ -34,19 +34,29 @@
             <li class="active"><a href="reservations.html">Reservations</a></li>
         </ul>
     </nav>
-    <main>
-        <div>Table with Info for 3 adventures</div>
-        <div>Reservation Form</div>
+    <main class="resMain">
+        <div class="advTable">Table with Info for 3 adventures</div>
+        <div class="divForm">
         <form method="get" action="res_confirmation.html">
             <fieldset>
-                <legend>Salmon River registrations:</legend>
+                <legend>Salmon River Registration:</legend>
                 <label class="ontop">Full Name:* <input type="text" name="fullname" pattern="[A-Za-z ]{5,}" required></label>
-                <label class="ontop">Email: <input type="email" name="email" placeholder="email@domain.com"></label>
+                <label class="ontop">Email:* <input type="email" name="email" placeholder="email@domain.com" required></label>
                 <label class="ontop">Phone Number:* <input type="tel" name="phone" required></label>
-
+                <label class="ontop" for="selAdventure">Adventure: </label>
+                <select name="selAdventure" id="selAdventure">
+                    <option value="" selected disabled>Select Adventure ...</option>
+                    <option value="adventure1">Adventure 1</option>
+                    <option value="adventure2">Adventure 2</option>
+                    <option value="adventure3">Adventure 3</option>
+                </select>
+                <label class="ontop">Start Date: <input type="date" name="date" required></label>
+                <label class="ontop">Question/Comments: <textarea name="commentText"></textarea></label>
             </fieldset>
+            <input class="submit" type="submit" value="Reserve my adventure">
         </form>
-
+        </div>
+        
 
     </main>
     <footer>&copy; 2020 &VerticalSeparator; Jarrod Collison <br>
