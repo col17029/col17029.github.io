@@ -15,6 +15,8 @@ header {
     display: flex;
     justify-content: center;
     padding-top: 1rem; }
+    header picture img {
+      border-radius: 10px; }
   header h1 {
     font-size: 1.8rem;
     text-align: center; }
@@ -150,6 +152,56 @@ form {
   display: flex;
   justify-content: center; }
 
+.homeWeatherDiv,
+.homeContactDiv,
+.homeCTADiv,
+.homeContentDiv {
+  border: 2px solid #123852;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem auto; }
+
+.homeWeatherLabel h3 {
+  margin-bottom: 5px; }
+
+.homeForecast {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .homeForecast div {
+    border: 1px solid #123852;
+    border-radius: 10px;
+    background-color: #f5ddb2;
+    padding: 1rem;
+    width: 100%; }
+    .homeForecast div img {
+      width: 100%;
+      background-color: #f5ddb2; }
+
+.fcDay,
+.fcDate,
+.fcTemp,
+.fcDesc {
+  display: block;
+  font-weight: 700;
+  color: black;
+  text-align: center; }
+
+.fcDesc {
+  text-transform: capitalize; }
+
+.advDiv {
+  border: 2px solid #123852;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem auto; }
+
+.rgDiv {
+  border: 2px solid #123852;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem auto; }
+
 @media only screen and (min-width: 650px) {
   header {
     display: flex;
@@ -160,11 +212,11 @@ form {
       justify-content: center;
       padding-top: 0; }
     header img {
-      width: 100px;
-      padding-right: 1rem; }
+      width: 100px; }
     header h1 {
       margin: -5px 0 0 0;
-      font-size: 2.5rem; }
+      font-size: 2.5rem;
+      padding-left: 1rem; }
     header h2 {
       font-size: 1.5rem;
       text-align: right;
@@ -191,7 +243,9 @@ form {
     padding: 1rem;
     width: 50%; }
     .contactMap img {
-      width: 100%; } }
+      width: 100%; }
+  .homeWeatherDiv {
+    display: block; } }
 
 /* end of media query */
 /* end of media query */

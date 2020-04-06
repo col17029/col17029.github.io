@@ -1,0 +1,44 @@
+{
+    "guides": [
+      {
+        "name": "George Jones",
+        "photo": "george.jpg",
+        "certlevel": "Expert",
+        "experience": 3,
+        "email": "george@sra.local",
+        "biography": "Text about george goes here...",
+      },
+      {
+        "name": "Alicia Waters",
+        "photo": "alicia.jpg",
+        "certlevel": "Expert",
+        "experience": 5,
+        "email": "alicia@sra.local",
+        "biography": "Text about alicia goes here...",
+      },
+      {
+        "name": "Kenny Burns",
+        "photo": "kenny.jpg",
+        "certlevel": "Suitable",
+        "experience": 1,
+        "email": "kenny@sra.local",
+        "biography": "Text about kenny goes here...",
+      },
+      {
+        "name": "Bob Mulen",
+        "photo": "bob.jpg",
+        "certlevel": "Advanced",
+        "experience": 2,
+        "email": "bob@sra.local",
+        "biography": "Text about bob goes here...",
+      },
+      {
+        "name": "Sammy Wiles",
+        "photo": "sammy.jpg",
+        "certlevel": "Master",
+        "experience": 10,
+        "email": "sammy@sra.local",
+        "biography": "Text about sammy goes here...",
+      }
+      ]
+  }

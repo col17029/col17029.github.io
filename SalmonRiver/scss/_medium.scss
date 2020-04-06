@@ -9,11 +9,12 @@ header {
     } // end picture
     img {
         width: 100px;  
-        padding-right: 1rem;      
+        //padding-right: 1rem;      
     } // end img
     h1 {
         margin: -5px 0 0 0;
         font-size: 2.5rem;
+        padding-left: 1rem;
     } // end h1
     h2 {
         font-size: 1.5rem;
@@ -60,3 +61,9 @@ footer {
         width: 100%;
     } //end img
 } // end contactMap
+
+//---------------------------------------------------------------
+.homeWeatherDiv {
+    display: block;
+}
+
