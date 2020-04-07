@@ -89,14 +89,12 @@ fetch(apiForecastURL)
 // River guide json
 
 const rgURL = 'https://col17029.github.io/SalmonRiver/json/riverGuide.json';
-fetch(rgURL)
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (jsonObject) {
-        const guides = jsonObject['guides'];
-        console.table(jsonObject); // temporary checking for valid response and data parsing
-        for (let i = 0; i < guides.length; i++) {
+fetch('./json/temp.json')
+    .then((response) => response.json())
+    .then(jsObject => {
+        const guides = jsObject['guides'];
+        console.log(jsObject); // temporary checking for valid response and data parsing
+        /*for (let i = 0; i < guides.length; i++) {
                 let guide = document.createElement('section');
                 let rgName = document.createElement('div');
                 let rgImage = document.createElement('img');
@@ -127,5 +125,5 @@ fetch(rgURL)
 
                 document.querySelector('div.rgInfo').appendChild(guide);
             }
-        
-    });
+        */
+    });  
