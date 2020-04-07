@@ -169,7 +169,8 @@ form {
   border: 1px solid #123852;
   border-radius: 10px;
   padding: 1rem 0;
-  width: 350px; }
+  width: 350px;
+  max-width: 700px; }
   .contactMap img {
     width: 90%; }
 
