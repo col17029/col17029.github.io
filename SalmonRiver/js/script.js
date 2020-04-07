@@ -89,13 +89,14 @@ fetch(apiForecastURL)
 // River guide json
 
 const rgURL = 'https://col17029.github.io/SalmonRiver/json/riverGuide.json';
-fetch('./json/temp.json')
+fetch('./json/riverGuide.json')
     .then((response) => response.json())
     .then(jsObject => {
         const guides = jsObject['guides'];
         console.log(jsObject); // temporary checking for valid response and data parsing
-        /*for (let i = 0; i < guides.length; i++) {
+        for (let i = 0; i < guides.length; i++) {
                 let guide = document.createElement('section');
+                let rgInfo = document.createElement('div');
                 let rgName = document.createElement('div');
                 let rgImage = document.createElement('img');
                 let rgCert = document.createElement('div');
@@ -103,9 +104,10 @@ fetch('./json/temp.json')
                 let rgEmail = document.createElement('div');
                 let rgBio = document.createElement('div');
 
+                rgInfo.setAttribute('class', "rgInfo");
                 rgName.textContent = guides[i].name;
                 rgName.setAttribute('class', "rgName");
-                //rgImage.setAttribute('src', "images/" + guides[i].photo);
+                rgImage.setAttribute('src', "images/" + guides[i].photo);
                 rgImage.setAttribute('alt', guides[i].name);
                 rgCert.textContent = 'Certification: ' + guides[i].certlevel;
                 rgCert.setAttribute('class', "rgCert");
@@ -116,14 +118,16 @@ fetch('./json/temp.json')
                 rgBio.textContent = 'Biography: ' + guides[i].biography;
                 rgBio.setAttribute('class', "rgBio");
 
-                guide.appendChild(rgName);
+                
+                rgInfo.appendChild(rgName);
+                rgInfo.appendChild(rgCert);
+                rgInfo.appendChild(rgYears);
+                rgInfo.appendChild(rgEmail);
+                rgInfo.appendChild(rgBio); 
+                
                 guide.appendChild(rgImage);
-                guide.appendChild(rgCert);
-                guide.appendChild(rgYears);
-                guide.appendChild(rgEmail);
-                guide.appendChild(rgBio);  
+                guide.appendChild(rgInfo);
 
-                document.querySelector('div.rgInfo').appendChild(guide);
+                document.querySelector('div.rgDiv').appendChild(guide);
             }
-        */
     });  

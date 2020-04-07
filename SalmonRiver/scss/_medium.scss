@@ -67,3 +67,39 @@ footer {
     display: block;
 }
 
+//------------------------------------------------
+// River Guides Page
+
+.rgDiv {
+    border: 2px solid $menuColor;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(1,98%);
+    justify-content: center;
+    section {
+        border: 1px solid $primaryColor;
+        border-radius: 10px;
+        width: 600px;
+        margin: .5rem auto;
+        padding: 1rem;
+        display: flex;
+    } // end rgDiv section
+    section:nth-child(odd) {
+        display: flex;
+        flex-direction: row-reverse;
+    }// end section:nth-child(odd)
+    img {
+        width: 200px;
+        border-radius: 10px;
+    } //end rgDiv img
+} // end rgDiv
+
+.rgName {
+    font-size: 2rem;   
+}
+
+.rgInfo {
+    padding: 1rem;
+}
