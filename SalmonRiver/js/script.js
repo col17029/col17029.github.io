@@ -42,7 +42,7 @@ fetch(apiURL)
         document.querySelector('span.fcTemp').textContent =  Math.round(jsObject.main.temp)+ "\xB0 F";    
         document.querySelector('span.fcDesc').textContent = jsObject.weather[0].description;
         document.querySelector('img.toImage').setAttribute('src', 'https://openweathermap.org/img/wn/' + jsObject.weather[0].icon + '@2x.png'); // note the concatenation
-        document.querySelector('img.toImage').setAttribute('alt', forecast.weather[0].description);
+        document.querySelector('img.toImage').setAttribute('alt', jsObject.weather[0].description);
     });
 
 // 5 Day forecast
