@@ -22,9 +22,7 @@ header {
         }
     } // end picture
     h1 {
-        
         font-size: 1.8rem;
-    //    width: 100%;
         text-align: center; 
     } // end h1
     h2 {
@@ -72,10 +70,6 @@ nav {
     border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-main {
-}
-
-
 footer {
     margin: 0 auto;
     background-color: $primaryColor;
@@ -95,12 +89,40 @@ footer {
 //----------------------------------------------------------
 //reservation page
 
-.resMain {
-    
+.resTable {
+    border: 1px solid $menuColor;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem auto; 
+    width: 90%;
+    max-width: 700px;
 }
 
-.advTable {
-    padding: 1rem;
+table {
+    width: 90%;
+    margin: auto;
+    box-shadow: 10px 10px 10px $primaryColor;
+}
+
+table,
+th,
+td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 5px;
+    text-align: center;
+}
+
+caption {
+    background-color: $primaryColor;
+    color: white;
+    font-size: 24px;
+    font-weight: 900;
+    padding: 15px;
 }
 
 .resForm {
@@ -215,6 +237,8 @@ form {
     border-radius: 8px;
     padding: 1rem;
     margin: 1rem auto; 
+    width: 90%;
+    max-width: 700px;
     img {
         width: 100%;
         border-radius: 10px;
@@ -254,12 +278,6 @@ form {
         border: 1px solid $menuColor;
         border-radius: 10px;
         background-color: $weatherColor;
-        //padding: 1rem;
-        //width: 100%;
-        img {
-            //width: 50px;
-           // background-color: $weatherColor;
-        }
     } //end homeForecast div
 } //end homeForecast
 
@@ -271,7 +289,6 @@ form {
     font-weight: 700;
     color: black;
     text-align: center;
-    //padding-top: 1rem;
 }
 
 .fcDesc {
@@ -281,7 +298,6 @@ form {
 .todayCol, .fcCol {
     display: flex;
     font-size: .8rem;
-    //width: 80%;
     img {width:50px;  order: 1;}
     .fcDay {margin: 1rem 0; order: 2;}
     .fcDate {margin: 1rem 1rem; order: 3;}
@@ -300,11 +316,23 @@ form {
     border-radius: 8px;
     padding: 1rem;
     margin: 1rem auto;
+    width: 80%;
+    section {
+        border: 1px solid $primaryColor;
+        border-radius: 10px;
+        padding: 1rem;
+        margin: 1rem auto;
+        img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+        div {
+            width: 100%;
+            max-width: 500px;
+        }
+    }
 }
-
-
-
-
 
 
 //------------------------------------------------
@@ -315,22 +343,32 @@ form {
     border-radius: 8px;
     padding: 1rem;
     margin: 1rem auto;
-    display: grid;
-    grid-template-columns: repeat(1,98%);
+    width: 80%;
+    max-width: 700px;
     justify-content: center;
     section {
         border: 1px solid $primaryColor;
         border-radius: 10px;
-        margin: 1rem auto;
+        margin: .5rem auto;
         padding: 1rem;
-        display: flex;
+        display: block;
     } // end rgDiv section
+    
     img {
         width: 200px;
+        max-width: 200px;
+        border-radius: 10px;
     } //end rgDiv img
 } // end rgDiv
 
 .rgName {
-    font-size: 2rem;
-    
+    font-size: 2rem;   
+}
+
+.rgInfo {
+    padding: 1rem;  
+}
+
+.rgBio {
+    padding-top: 1rem;
 }

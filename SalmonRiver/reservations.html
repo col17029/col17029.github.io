@@ -35,7 +35,45 @@
         </ul>
     </nav>
     <main class="resMain">
-        <div class="advTable">Table with Info for 3 adventures</div>
+        <div class="resTable">
+            <table>
+                <caption>Salmon River Tours</caption>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Code</th>
+                        <th>Length</th>
+                        <th>Skill Level</th>
+                        <th>Cost</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rapids</td>
+                        <td>SRRT</td>
+                        <td>6 hr</td>
+                        <td>Exp</td>
+                        <td>$300.00</td>
+                    </tr>
+                    <tr>
+                        <td>Kayaking</td>
+                        <td>SRKT</td>
+                        <td>2 hr</td>
+                        <td>Beg</td>
+                        <td>$100.00</td>
+                    </tr>
+                    <tr>
+                        <td>Kayaking 3-day</td>
+                        <td>SRKT3</td>
+                        <td>3 day</td>
+                        <td>Int</td>
+                        <td>$500.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        
         <div class="resForm">
         <form method="get" action="res_confirmation.html">
             <fieldset>
@@ -46,9 +84,9 @@
                 <label class="ontop" for="selAdventure">Adventure: </label>
                 <select name="selAdventure" id="selAdventure">
                     <option value="" selected disabled>Select Adventure ...</option>
-                    <option value="adventure1">Adventure 1</option>
-                    <option value="adventure2">Adventure 2</option>
-                    <option value="adventure3">Adventure 3</option>
+                    <option value="adventure1">SRRT:Rapids Tour</option>
+                    <option value="adventure2">SRKT:Kayaking Tour</option>
+                    <option value="adventure3">SRKT3:Kayaking 3-Day</option>
                 </select>
                 <label class="ontop">Start Date: <input type="date" name="date" required></label>
                 <label class="ontop">Question/Comments: <textarea name="commentText"></textarea></label>

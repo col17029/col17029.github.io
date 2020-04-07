@@ -6,7 +6,7 @@
           "certlevel": "Expert",
           "experience": 3,
           "email": "george@sra.local",
-          "biography": "Text about george goes here..."
+          "biography": "George and his wife Samantha have two beautiful daughters. They live on a lake, spending their spare time on the water. George grew up in Idaho and has been white‐water rafting since childhood. He is a middle school teacher who also enjoys biking and water skiing. George has worked as a guide for 3 years and is confident and friendly in his work. He guarantees you will have the time of your life!"
        },
        {
           "name": "Alicia Waters",
@@ -14,7 +14,7 @@
           "certlevel": "Expert",
           "experience": 5,
           "email": "alicia@sra.local",
-          "biography": "Text about alicia goes here..."
+          "biography": "Alicia and her husband Fred have the best last name for this industry! In her spare time Lisa enjoys gardening and bird watching. Lisa has worked for us for 5 years in which time she has proven her ability and knowledge suitable for kayaking tours. She grew up in Idaho and knows the waters and landmarks well. All who take her tours go home with a better appreciation for the wonders Idaho has to offer!"
        },
        {
           "name": "Kenny Burns",
@@ -22,7 +22,7 @@
           "certlevel": "Suitable",
           "experience": 1,
           "email": "kenny@sra.local",
-          "biography": "Text about kenny goes here..."
+          "biography": "Kenny is a student in Idaho, studying to be a park ranger. Although he has only worked for us for one year, he grew up white water rafting in Colorado and is now using his experience to share the joy he finds in this hobby. Kenny enjoys anything that gets him moving outside, from tree climbing to cycling. You will feel his excitement for the outdoors and the roaring river with Kenny as your guide!"
        },
        {
           "name": "Bob Mulen",
@@ -30,15 +30,15 @@
           "certlevel": "Advanced",
           "experience": 2,
           "email": "bob@sra.local",
-          "biography": "Text about bob goes here..."
-       },
+          "biography": "Bob is a systems engineer who took up kayaking as a way to get outside more. He has been with us for 2 years. In his free time Bob likes scrabble competitions and pie eating contests. He seeks the peace of the great Idaho outdoors. Bob can help you find that same serenity!"       
+         },
        {
           "name": "Sammy Wiles",
           "photo": "sammy_300.jpg",
           "certlevel": "Master",
           "experience": 10,
           "email": "sammy@sra.local",
-          "biography": "Text about sammy goes here..."
+          "biography": "Sammy is our most experienced guide, offering tours in both kayaking and white‐water rafting. She and her husband Thomas have one teenage son. She enjoys quilting and playing horseshoes in her spare time. Sammy works to engage all ages in the excitement the outdoors offers. She knows the water well and will keep your family safe as they take this memorable adventure!"
        }
     ]
  }
