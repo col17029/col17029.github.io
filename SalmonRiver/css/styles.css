@@ -263,7 +263,8 @@ form {
   border-radius: 8px;
   padding: 1rem;
   margin: 1rem auto;
-  width: 80%; }
+  width: 80%;
+  max-width: 700px; }
   .advDiv section {
     border: 1px solid #29526D;
     border-radius: 10px;
