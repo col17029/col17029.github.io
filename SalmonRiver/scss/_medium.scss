@@ -63,9 +63,56 @@ footer {
 } // end contactMap
 
 //---------------------------------------------------------------
+// Home page
 .homeWeatherDiv {
     display: block;
 }
+
+.homeForecast {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    div {
+        border: 1px solid $menuColor;
+        border-radius: 10px;
+        background-color: $weatherColor;
+        padding: 1rem;
+        width: 100%;
+        img {
+            width: 100%;
+            background-color: $weatherColor;
+        }
+    } //end homeForecast div
+} //end homeForecast
+
+.fcCol {
+    //display: none
+}
+
+.fcDay,
+.fcDate,
+.fcTemp,
+.fcDesc {
+    display: block;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+}
+
+.fcDesc {
+    text-transform: capitalize;
+}
+
+.todayCol, .fcCol {
+    display: block;
+    font-size: 1rem;
+    //width: 80%;
+    img {width:50px;  order: 3;}
+    .fcDay {margin: 0; order: 1;}
+    .fcDate {margin: 0; order: 2;}
+    .fcTemp {margin: 0; order: 4;}
+    .fcDesc {margin: 0; order: 5;}    
+} // end .todayCol
 
 //------------------------------------------------
 // River Guides Page

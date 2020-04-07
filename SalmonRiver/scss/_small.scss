@@ -209,39 +209,59 @@ form {
 
 .homeWeatherDiv, 
 .homeContactDiv,
-.homeCTADiv,
 .homeContentDiv {
     //display: none;
     border: 2px solid $menuColor;
     border-radius: 8px;
     padding: 1rem;
     margin: 1rem auto; 
+    img {
+        width: 100%;
+        border-radius: 10px;
+    }// end .homeContentDiv img
+}// end .homeContentDiv
+
+.homeContentDiv {
+    position: relative;
 }
+
+.homeCTA {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    background: radial-gradient(#eee, yellow);
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: 0 0 30px #111;
+    opacity: .9;
+    //color: black;
+    a {
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+    } // end .homeCTA a
+} // end .homeCTA
 
 .homeWeatherLabel h3 {
     margin-bottom: 5px;
 }
 
 .homeForecast {
-    display: flex;
+    display: block;
     flex-direction: row;
     justify-content: center;
     div {
         border: 1px solid $menuColor;
         border-radius: 10px;
         background-color: $weatherColor;
-        padding: 1rem;
-        width: 100%;
+        //padding: 1rem;
+        //width: 100%;
         img {
-            width: 100%;
-            background-color: $weatherColor;
+            //width: 50px;
+           // background-color: $weatherColor;
         }
     } //end homeForecast div
 } //end homeForecast
-
-.fcCol {
-    //display: none
-}
 
 .fcDay,
 .fcDate,
@@ -251,12 +271,26 @@ form {
     font-weight: 700;
     color: black;
     text-align: center;
+    //padding-top: 1rem;
 }
 
 .fcDesc {
     text-transform: capitalize;
 }
 
+.todayCol, .fcCol {
+    display: flex;
+    font-size: .8rem;
+    //width: 80%;
+    img {width:50px;  order: 1;}
+    .fcDay {margin: 1rem 0; order: 2;}
+    .fcDate {margin: 1rem 1rem; order: 3;}
+    .fcTemp {margin: 1rem 0; order: 4;}
+    .fcDesc {margin: 1rem 0 0 1rem; order: 5;}    
+} // end .todayCol
+.todayCol .fcDay {
+    margin-right: 1rem;
+}
 
 //----------------------------------------------
 //Adventure Page

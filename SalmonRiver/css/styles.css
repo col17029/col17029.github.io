@@ -154,29 +154,45 @@ form {
 
 .homeWeatherDiv,
 .homeContactDiv,
-.homeCTADiv,
 .homeContentDiv {
   border: 2px solid #123852;
   border-radius: 8px;
   padding: 1rem;
   margin: 1rem auto; }
+  .homeWeatherDiv img,
+  .homeContactDiv img,
+  .homeContentDiv img {
+    width: 100%;
+    border-radius: 10px; }
+
+.homeContentDiv {
+  position: relative; }
+
+.homeCTA {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  background: radial-gradient(#eee, yellow);
+  border-radius: 20px;
+  padding: 1rem;
+  box-shadow: 0 0 30px #111;
+  opacity: .9; }
+  .homeCTA a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700; }
 
 .homeWeatherLabel h3 {
   margin-bottom: 5px; }
 
 .homeForecast {
-  display: flex;
+  display: block;
   flex-direction: row;
   justify-content: center; }
   .homeForecast div {
     border: 1px solid #123852;
     border-radius: 10px;
-    background-color: #f5ddb2;
-    padding: 1rem;
-    width: 100%; }
-    .homeForecast div img {
-      width: 100%;
-      background-color: #f5ddb2; }
+    background-color: #f5ddb2; }
 
 .fcDay,
 .fcDate,
@@ -189,6 +205,28 @@ form {
 
 .fcDesc {
   text-transform: capitalize; }
+
+.todayCol, .fcCol {
+  display: flex;
+  font-size: .8rem; }
+  .todayCol img, .fcCol img {
+    width: 50px;
+    order: 1; }
+  .todayCol .fcDay, .fcCol .fcDay {
+    margin: 1rem 0;
+    order: 2; }
+  .todayCol .fcDate, .fcCol .fcDate {
+    margin: 1rem 1rem;
+    order: 3; }
+  .todayCol .fcTemp, .fcCol .fcTemp {
+    margin: 1rem 0;
+    order: 4; }
+  .todayCol .fcDesc, .fcCol .fcDesc {
+    margin: 1rem 0 0 1rem;
+    order: 5; }
+
+.todayCol .fcDay {
+  margin-right: 1rem; }
 
 .advDiv {
   border: 2px solid #123852;
@@ -260,6 +298,47 @@ form {
       width: 100%; }
   .homeWeatherDiv {
     display: block; }
+  .homeForecast {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .homeForecast div {
+      border: 1px solid #123852;
+      border-radius: 10px;
+      background-color: #f5ddb2;
+      padding: 1rem;
+      width: 100%; }
+      .homeForecast div img {
+        width: 100%;
+        background-color: #f5ddb2; }
+  .fcDay,
+  .fcDate,
+  .fcTemp,
+  .fcDesc {
+    display: block;
+    font-weight: 700;
+    color: black;
+    text-align: center; }
+  .fcDesc {
+    text-transform: capitalize; }
+  .todayCol, .fcCol {
+    display: block;
+    font-size: 1rem; }
+    .todayCol img, .fcCol img {
+      width: 50px;
+      order: 3; }
+    .todayCol .fcDay, .fcCol .fcDay {
+      margin: 0;
+      order: 1; }
+    .todayCol .fcDate, .fcCol .fcDate {
+      margin: 0;
+      order: 2; }
+    .todayCol .fcTemp, .fcCol .fcTemp {
+      margin: 0;
+      order: 4; }
+    .todayCol .fcDesc, .fcCol .fcDesc {
+      margin: 0;
+      order: 5; }
   .rgDiv {
     border: 2px solid #123852;
     border-radius: 8px;

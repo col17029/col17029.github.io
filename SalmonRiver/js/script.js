@@ -37,8 +37,8 @@ fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
         //console.log(jsObject);
-        let tDate = new Date();
-        document.querySelector('span.fcDate').textContent = (tDate.getMonth() + 1) + '/' + tDate.getDate();
+        //let tDate = new Date();
+        //document.querySelector('span.fcDate').textContent = (tDate.getMonth() + 1) + '/' + tDate.getDate();
         document.querySelector('span.fcTemp').textContent =  Math.round(jsObject.main.temp)+ "\xB0 F";    
         document.querySelector('span.fcDesc').textContent = jsObject.weather[0].description;
         document.querySelector('img.toImage').setAttribute('src', 'https://openweathermap.org/img/wn/' + jsObject.weather[0].icon + '@2x.png'); // note the concatenation
@@ -53,7 +53,7 @@ fetch(apiForecastURL)
     .then((response) => response.json())
     .then((jsObject) => {
         const fcList = jsObject.list.filter(fcList => fcList.dt_txt.includes('18:00:00'))
-        //console.log(jsObject);
+        console.log(jsObject);
         //console.log(fcList);
 
         fcList.forEach(forecast => {
@@ -68,6 +68,7 @@ fetch(apiForecastURL)
             fcDay.textContent = weekday[valDate.getDay()];
             fcDay.setAttribute('class', "fcDay");
             fcDate.textContent = (valDate.getMonth() + 1) + '/' + valDate.getDate();
+            console.log(valDate);
             fcDate.setAttribute('class', "fcDate");
             image.setAttribute('src', 'https://openweathermap.org/img/wn/' + forecast.weather[0].icon + '@2x.png');
             image.setAttribute('alt', forecast.weather[0].description);
