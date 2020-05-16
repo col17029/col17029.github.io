@@ -1,0 +1,36 @@
+<p>
+Some common types of form control are:<br>
+    -input- fields, including text, passwords, check boxes, radio buttons, and file uploads<br>
+    -select- menus for drop-down lists of options<br>
+    -textarea- elements for longer text entry<br>
+    -button- elements for submitting and resetting forms<br>
+</p>
+<p>
+- document.forms will return an HTML collection of all the forms on a page.
+- form.elements will return an HTML collection of all the elements contained within a form.
+- Forms have focus , blur , and change events that fire as a user interacts with the form.
+- Forms also have a submit event that can be used to intercept a form before it’s been submitted.
+- The information entered into a form can be read or updated using the value property of the form controls.
+</p>
+<p>
+Chapter 12:
+Questions:
+   <p> 1. I don't understand the difference between literals and constructors.  
+        It seems easier to build an array as a literal but also is recommended. </p>
+  <p>  2. I'm not sure I understand how to build constructor functions.  It is confusing enough to read through it
+        to determine what it is doing, let alone understanding what needs to be put in place to build one.</p>
+  <p>  3. class Turtle {
+        constructor(name,color) {
+            this.name = name;
+            let _color = color;
+            this.setColor = color => { return _color = color; }
+            this.getColor = () => _color;
+        }
+    }   // Why are we declaring _color = color twice?  
+</p>
+<p>
+Notes:
+A golden rule to remember is:Never use arrays or objects as a default value in prototype.
+</p><p>
+Inside the child class declaration, the keyword super refers to the parent class, and can be used to access any properties and call any methods of the parent class
+</p>
