@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Todo site for WDD-330">
+    <title>Jarrod Collison - Todos page</title>
+    <link rel="stylesheet" href="css/todos.css">
+</head>
+
+<body>
+
+    <div class="divTodoList">
+        <h2>ToDo List:</h2>
+
+        <div class="divMain">
+            <div id="taskList"></div>
+            <div class="divFilter">
+                <form>
+                    <span>Tasks: </span><span id="count"></span>
+                    <span class="filter">Filter: </span>
+                    <span>
+                        <input type="radio" name="taskFilter" value="all" id="all" checked onclick="showTask()">All
+                        <input type="radio" name="taskFilter" value="active" id="active" onclick="showTask()">Active
+                        <input type="radio" name="taskFilter" value="completed" id="completed"
+                            onclick="showTask()">Completed
+                    </span>
+                </form>
+                </section>
+            </div>
+            <div class="divAdd">
+                <form>
+                    <input autofocus type="input" id="inputTask" placeholder="What's your next task?">
+                    <button type="submit" id="submitTask">Add</button>
+                </form>
+            </div>
+        </div>
+
+        <script src="js/todos.js"></script>
+</body>
+
+</html>

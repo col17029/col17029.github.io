@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+    <title>TicTacToe</title>
+    <style>
+        main {
+            justify-content: center;
+        }
+        table {
+            width: 200px;
+            height: 200px;
+            margin: auto;
+        }
+        table,
+        td {
+            border-collapse: collapse;
+            text-align: center;
+            font-size: 30px;
+        }
+        table tbody tr:nth-child(1) {
+            border-bottom: 1px solid black;
+        }
+        table tbody tr:nth-child(3) {
+            border-top: 1px solid black;
+        }
+        table tbody td:nth-child(1) {
+            border-right: 1px solid black;
+        }
+        table tbody td:nth-child(3) {
+            border-left: 1px solid black;
+        }
+        .divControls {
+            width: 200px;
+            margin: auto;
+            padding-top: 10px;
+        }
+        .divControls button {
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <form>
+        <table>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="divControls">
+            <button class="btnReset" type="reset">Reset Game</button>
+        </div>
+        </form>
+    </main>
+
+    <script>
+        addEventListener('touchend', () => console.log('Touch stopped'));
+    </script>
+</body>
+
+</html>
