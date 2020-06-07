@@ -1,0 +1,73 @@
+memoization:   caches information
+function square(x){
+    square.cache = square.cache || {};
+    if (!square.cache[x]) {
+        square.cache[x] = x*x;
+    }
+    return square.cache[x]
+}
+
+
+IIFE - Immediately Invoked Function Expressions:  invoked as soon as it is defined
+(function(){
+const temp = 'World';
+console.log(`Hello ${temp}`);
+})();
+<< 'Hello World'
+
+use strict mode within functions (safe way to utilize it)
+(function() {
+    'use strict';
+// All your code would go inside this function
+})();
+
+Recursive function:  invokes itself until a condition is met
+function factorial(n) {
+    if (n === 0) {
+        return 1;
+    } else {
+        return n * factorial(n - 1);
+    }
+}
+
+A promise represents the future result of an asynchronous operation. Promises don't do anything that can't already be achieved using callbacks, but they help simplify the process, and avoid the convoluted code that can result from using multiple callbacks.
+
+Resolved ― the asynchronous operation was completed successfully.
+
+Rejected ― the asynchronous operation didn’t work as expected, wasn't successfully completed or resulted in an error.
+
+const promise = new Promise( (resolve, reject) => {
+    // initialization code goes here
+    if (success) {
+        resolve(value);
+    } else {
+        reject(error);
+    }
+});
+
+fetch:
+fetch('https://example.com/data')
+.then( // code that handles the response )
+.catch( // code that runs if the server returns an error )
+
+redirect:
+fetch(url)
+.then( response => response.redirect(newURL)); // redirects to another URL
+.then( // do something else )
+.catch( error => console.log('There was an error: ', error))
+
+Request Interface
+We can get more fine-grained control over the request being made by providing a Request object as an argument. This allows a number of options to be set about the request.
+
+Request objects are created using the Request() constructor, and include the following properties:
+
+ url – The URL of the requested resource (the only property that is required).
+ method – a string that specifies which HTTP method should be used for the request. By default, this is 'GET'.
+ headers – This is a Headers object (see later section) that provides details of the request's headers.
+ mode – Allows you to specify if CORS is used or not. CORS is enabled by default.
+ cache – Allows you to specify how the request will use the browser's cache. For example, you can force it to request a resource and update the cache with the result, or you can force it to only look in the cache for the resource.
+ credentials – Lets you specify if cookies should be allowed with the request.
+ redirect – Specifies what to do if the response returns a redirect. There’s a choice of three values: 'follow' (the redirect is followed), 'error' (an error is thrown) or 'manual' (the user has to click on a link to follow the redirect).
+ 
+ 
+
