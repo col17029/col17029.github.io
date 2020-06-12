@@ -1,46 +1,47 @@
-Exception - produces return value to help with troubleshooting.
+<p>
+Exception - produces return value to help with troubleshooting.<br>
+<br>
+Stack Trace - Give sequence from error back to help trace down the issue.<br>
+<br>
+Warning - code keeps going but something is wrong.<br>
+<br>
+Fail loudly in developement, gracefully in production.<br>
+<br>
+'use strict'; //to enable strict mode<br>
+<br>
+function strictly(){<br>
+    'use strict';<br>
+    // function code goes here, for strict mode by function.<br>
+    <br>
+Linting tools will look for sloppy code and enforcing programming style guides.<br>
+<br>
+Feature detection =<br>
+Modernizr<br>
+Can I use?<br>
 
-Stack Trace - Give sequence from error back to help trace down the issue.
-
-Warning - code keeps going but something is wrong.
-
-Fail loudly in developement, gracefully in production.
-
-'use strict'; //to enable strict mode
-
-function strictly(){
-    'use strict';
-    // function code goes here, for strict mode by function.
-
-Linting tools will look for sloppy code and enforcing programming style guides.
-
-Feature detection =
-Modernizr
-Can I use?
-
-alert() or console.log()   // will display results
-
-console.trace()  //logs a stack trace to the console.
-
-try, catch, and finally:
-function imaginarySquareRoot(number) {
-    'use strict';
-    try {
-        return String(squareRoot(number));
-    } catch(error) {
-        return squareRoot(-number)+'i';
-    }
-}
-
-TDD - Test drive developement //writing tests before coding.
-Write tests (that initially fail)
-
-Write code to pass the tests
-
-Refactor the code
-
-Test refactored code
-
-Write more tests for new features
-
+alert() or console.log()   // will display results<br>
+<br>
+console.trace()  //logs a stack trace to the console.<br>
+<br>
+try, catch, and finally:<br>
+function imaginarySquareRoot(number) {<br>
+    'use strict';<br>
+    try {<br>
+        return String(squareRoot(number));<br>
+    } catch(error) {<br>
+        return squareRoot(-number)+'i';<br>
+    }<br>
+}<br>
+<br>
+TDD - Test drive developement //writing tests before coding.<br>
+Write tests (that initially fail)<br>
+<br>
+Write code to pass the tests<br>
+<br>
+Refactor the code<br>
+<br>
+Test refactored code<br>
+<br>
+Write more tests for new features<br>
+</p>
 
