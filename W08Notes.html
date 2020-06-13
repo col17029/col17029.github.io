@@ -1,0 +1,78 @@
+<p>
+    Chpt 8 and 12, htlm and css3:<br>
+    <br>
+The CSS3 transform property lets you lets you translate, rotate, scale, and/or skew any element on the page. <br>
+<br>
+The translate(x,y) function moves an element x from the left, and y from the top:<br>
+transform: translate(45px, -45px);<br>
+<br>
+The scale(x,y) function scales an element by the defined factors horizontally then vertically.<br> 
+transform: scale(1.5, 0.25);<br>
+<br>
+The rotate() function rotates an element around the point of origin by a specified angle value. transform:<br>
+rotate(10deg) translateX(40px) scale(1.5);<br>
+<br>
+The skew(x,y) function specifies a skew along the x and y axes.<br>
+transform: skew(15deg, 4deg);<br>
+<br>
+The transition-duration property sets how long the transition will take: the duration of time it takes to go<br>
+from the default state to the transitioned state.<br>
+transition-duration: 0.2s;<br>
+<br>
+The transition-timing-function lets you control the pace of the transition in even more granular detail. <br>
+transition-timing-function: ease-out;<br>
+<br>
+CSS animations:<br>
+A keyframe is a snapshot that defines a starting or end point of any smooth transition<br>
+<br>
+@-webkit-keyframes myAnimation { <br>
+    /* put animation keyframes here */<br>
+}<br>
+or<br>
+@keyframes myAnimation { <br>
+    /* put animation keyframes here */<br>
+}<br>
+
+examples:<br>
+@keyframes moveRight { <br>
+    from {<br>
+    transform: translateX(-50%);<br>
+    }<br>
+    to {<br>
+    transform: translateX(50%);<br>
+    }<br>
+}<br>
+@keyframes appearDisappear { <br>
+    0%, 100% {<br>
+    opacity: 0;<br>
+    }<br>
+    20%, 80% {<br>
+    opacity: 1;<br>
+    }<br>
+}<br>
+@keyframes bgMove {<br>
+    100% {<br>
+    background-position: 120% 0;<br>
+    }<br>
+}<br>
+<br>
+While animation-name is the only required animation property to create an animation,<br>
+the animation-duration shouldbe considered required to animate an element. Without<br>
+declaring the duration it defaults to 0s, which is imperceptible, but still fires the <br>
+animationstart and animationend events. The other animation properties, while they enable <br>
+you to better control your animation, are optional.<br>
+<br>
+Chpt 12:<br>
+With canvas, we can draw shapes and lines, arcs and text, gradients and patterns. <br>
+In addition, canvas gives us the power to manipulate pixels in images and even video.<br>
+<br>
+<canvas id="myCanvas" class="myCanvas" width="200" height="200"><br>
+    Sorry! Your browser doesn’t support Canvas.<br>
+</canvas><br>
+<br>
+.myCanvas {<br>
+    border: dotted 2px black;<br>
+}<br>
+<br>
+The text in between the canvas tags will only be shown if the canvas element is not supported by the visitor’s browser.<br>
+</p>
