@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Animation Example</title>
+    <style>
+        #square {
+            margin: 100px;
+            width: 100px;
+            height: 100px;
+            background: #cc0;
+            animation: spin 4s linear infinite;
+
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(360deg);
+            }
+
+            to ➥ {
+                transform: rotate(0deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="square"></div>
+    <br>
+    <br>
+    <br>
+    <div>
+        Avoid popups!<br>
+        <br>
+window.screen.height<br>
+1080<br>
+window.screen.width<br>
+1920<br>
+window.screen.availHeight<br>
+1040<br>
+window.screen.availWidth<br>
+1920<br>
+window.screen.colorDepth<br>
+24<br>
+<br>
+if(window.localStorage) {<br>
+delete localStorage.name;<br>
+}<br>
+<br>
+if(window.localStorage) {<br>
+localStorage.clear();<br>
+}<br>
+<br>
+if(navigator.geolocation) {<br>
+navigator.geolocation.getCurrentPosition(youAreHere);<br>
+}<br>
+<br>
+function youAreHere(position) {<br>
+alert("Latitude: " + position.coords.latitude + ", Longitude:<br>
+➥ position.coords.longitude);<br>
+}<br>
+<br>
+if(navigator.geolocation) {<br>
+var id = navigator.geolocation.watchPosition(youAreHere);<br>
+}<br>
+<br>
+navigator.geolocation.clearWatch(id);<br>
+<br>
+<audio src="/song.mp3" controls><br>
+Your browser does not support the audio element.<br>
+</audio><br>
+
+<video src="http://movie.mp4" controls><br>
+Your browser does not support the video element.<br>
+</video><br>
+    </div>
+    <script>
+        /*
+        var square = document.getElementById("square");
+        var angle = 0;
+        setInterval(function () {
+            angle = (angle + 5) % 360
+            square.style.transform = "rotate(" + angle + "deg)"
+        }, 1000 / 6)
+        */
+        var square = document.getElementById("square");
+        var angle = 0;
+
+        function rotate() {
+            angle = (angle + 5) % 360
+            square.style.transform = "rotate(" + angle + "deg)"
+            window.requestAnimationFrame(rotate);
+        }
+        id = window.requestAnimationFrame(rotate);
+    </script>
+</body>
+
+</html>
