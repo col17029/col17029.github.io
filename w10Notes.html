@@ -1,0 +1,56 @@
+<div>client-side form validation, helps ensure data submitted matches the requirements set forth in the various form controls<br>
+    <br>
+Why validate?<br>
+--We want to get the right data, in the right format<br>
+--We want to protect our users' data<br>
+--We want to protect ourselves<br>
+<br>
+Two types of validation:<br>
+- Built-in form validation<br>
+- JavaScript<br>
+
+When valid:<br>
+The element matches the :valid CSS pseudo-class, which lets you apply a specific style to valid elements.<br>
+<br>
+When not valid:<br>
+The element matches the :invalid CSS pseudo-class, and sometimes other UI pseudo-classes (e.g., :out-of-range) depending on the error, which lets you apply a specific style to invalid elements.<br>
+<br>
+fetchAPI:<br>
+<br>
+fetch('http://example.com/movies.json')<br>
+  .then(response => response.json())<br>
+  .then(data => console.log(data));<br>
+  <br>
+	method: 'POST', // *GET, POST, PUT, DELETE, etc.<br>
+    mode: 'cors', // no-cors, *cors, same-origin<br>
+    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached<br>
+    credentials: 'same-origin', // include, *same-origin, omit<br>
+    headers: {<br>
+      'Content-Type': 'application/json'<br>
+      // 'Content-Type': 'application/x-www-form-urlencoded',<br>
+    },<br>
+    redirect: 'follow', // manual, *follow, error<br>
+    referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url<br>
+    body: JSON.stringify(data) // body data type must match "Content-Type" header<br>
+	<br>
+Response.status — An integer (default value 200) containing the response status code.<br>
+Response.statusText — A string (default value "OK"), which corresponds to the HTTP status code message.<br>
+Response.ok — seen in use above, this is a shorthand for checking that status is in the range 200-299 inclusive. This returns a Boolean.<br>
+<br>
+The Body mixin defines the following methods to extract a body (implemented by both Request and Response). These all return a promise that is eventually resolved with the actual content.<br>
+<br>
+arrayBuffer()<br>
+blob()<br>
+json()<br>
+text()<br>
+formData()<br>
+<br>
+const form = new FormData(document.getElementById('login-form'));<br>
+fetch('/login', {<br>
+  method: 'POST',<br>
+  body: form<br>
+});<br>
+</div>
+
+
+	
