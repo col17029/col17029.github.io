@@ -1,4 +1,3 @@
-//const url = 'https://icanhazdadjoke.com/';
 
 function getJoke(url) {
 	return fetch(url, {
@@ -17,25 +16,14 @@ function getJoke(url) {
 			console.log(error);
 		});
 }
-// Display Joke
-// function renderJoke(data) {
-// 	console.log(data.joke);
-// 	console.log(data.id)
-// 	const jokeText = document.getElementById('joke-text');
-// 	const jokeID = document.getElementById('joke-id');
-// 	jokeText.innerHTML = data.joke;
-// 	jokeID.innerHTML = data.id;
-// }
-
 function showRandomJoke() {
 	let url = 'https://icanhazdadjoke.com/'
 	getJoke(url).then(function (data) {
-		console.log(data);
-		// render joke
-		//renderJoke(data);
+		//console.log(data);
 		document.getElementById('joke-text').innerHTML = data.joke;
 		document.getElementById('joke-text').className = "";
 		document.getElementById('joke-table').className = "hidden";
+		document.getElementById('jokeTerm').value = ""
 	});
 }
 
@@ -43,7 +31,7 @@ function showJokeList(jokeTerm) {
 	const term = jokeTerm;
 	let url = 'https://icanhazdadjoke.com/search?term=' + term
 	getJoke(url).then(function (data) {
-		console.log(data);
+		//console.log(data);
 		const results = data.results;
 		const jokeListElement = document.getElementById("jokeList");
 		renderJokeList(results, jokeListElement);
@@ -54,10 +42,8 @@ function showJokeList(jokeTerm) {
 }
 
 function renderJokeList(jokes, jokeListElement) {
-	//console.table(jokes);
 	const list = jokeListElement;
 	list.innerHTML = "";
-	
 	jokes.forEach(joke => {
 		let listItem = document.createElement("ul");
 		listItem.innerHTML = `
@@ -67,7 +53,6 @@ function renderJokeList(jokes, jokeListElement) {
 	});
 	
 };
-
 
 const randomBtn = document.getElementById("random");
 randomBtn.addEventListener("click", function (event) {
@@ -80,7 +65,6 @@ searchBtn.addEventListener("click", function (event) {
 	event.preventDefault();
 	const jokeTerm = document.getElementById("jokeTerm").value;
 	console.log(jokeTerm);
-	//let searchUrl = 'https://icanhazdadjoke.com/search/?term=' + jokeTerm;
 	showJokeList(jokeTerm);
 })
 
