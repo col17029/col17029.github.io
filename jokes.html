@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Jokes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="/css/jokes.css" />
+</head>
+
+<body>
+    <main>
+        <div id="joke-container">
+            <h1>Dad Jokes</h1>
+            <div id="joke-window">
+                <div>
+                    <button id="random">Random Joke...</button>
+                </div>
+                <div id="joke-text">
+                </div>
+                <div id="joke-list">
+                </div>
+            </div>
+            <form id="joke-form">
+                <div class="joke-controls">
+                    <input type="text" id="jokeTerm" class="jokeTerm" placeholder="keyword..." required>
+                </div>
+                <button type="submit" id="btnSearch" class="btnSearch">Search</button>
+            </form>
+            <div id="joke-id-note">
+                <span>Find it again by searching joke id:</span>
+                <span id="joke-id"></span>
+            </div>
+        </div>
+        <footer>
+            <div>A big shout-out to<br>
+                <a href='https://icanhazdadjoke.com/'>https://icanhazdadjoke.com/</a><br>
+                for the great repository!
+            </div>
+        </footer>
+    </main>
+    <script src="js/jokes.js"></script>
+</body>
+
+</html>
