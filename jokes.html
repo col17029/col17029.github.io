@@ -16,21 +16,22 @@
                 <div>
                     <button id="random">Random Joke...</button>
                 </div>
-                <div id="joke-text">
+                <div id="joke-text" class="">
                 </div>
-                <div id="joke-list">
+                <form id="joke-form">
+                    <div class="joke-controls">
+                        <input type="text" id="jokeTerm" class="jokeTerm" placeholder="keyword..." required>
+                    </div>
+                    <button type="submit" id="search" class="search">Search</button>
+                </form>
+                <div id="joke-table" class="">
+                    <div id="jokeCount"></div>
+                    <div id="jokeList">
+                        
+                    </div>
                 </div>
             </div>
-            <form id="joke-form">
-                <div class="joke-controls">
-                    <input type="text" id="jokeTerm" class="jokeTerm" placeholder="keyword..." required>
-                </div>
-                <button type="submit" id="btnSearch" class="btnSearch">Search</button>
-            </form>
-            <div id="joke-id-note">
-                <span>Find it again by searching joke id:</span>
-                <span id="joke-id"></span>
-            </div>
+
         </div>
         <footer>
             <div>A big shout-out to<br>
